@@ -9,12 +9,18 @@ import image from './assets/landingpagephoto.png';
 
 import LoGin from './Pages/Login';
 import SignUp from './Pages/SignUp';
+import Heads from './Pages/ResetPassword';
 
 const router = createBrowserRouter([
   {
     path: "/login",
-    element: <LoGin/>
+    element: <LoGin/>,
    
+   
+  },
+  {
+    path:'/resetpassword',
+    element:<Heads/>
   },
   {
     path:'/signup',
