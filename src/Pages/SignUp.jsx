@@ -2,12 +2,12 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 
 import image from '../assets/landingpagephoto.png';
-import { HeadIngs } from '../components/HeadinGs';
+import { HeadIngs } from '../components/Heading2';
 import { ForMs } from '../components/ForMs';
 function SignUp(){
     return(
         <>
-            <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh]'>
+            <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh] mt-1.4 ml-[5vw]'>
         <div className= ' headings  w-[50vw] h-[85vh] m-10 mt-14 ml-14 pl-10  '>
         <div>
             <div className=' '>
@@ -15,18 +15,23 @@ function SignUp(){
             </div>
             <div className='flex-col basis-2 mt-4'>
                 <div>
-                <div className='username'>
+                <div className='username inpboxesofform m-0.3 p-2'>
                          <span className="material-symbols-outlined pr-1.5">person</span>
-                        <input type="text" placeholder='Username' name="" id=""  className='p-1.5 border-0 border-transparent text-[20px] '/>
+                        <input type="text" placeholder='Username' name="" id=""  className='w-[91%]  p-1.5 border-0 border-transparent text-[20px] '/>
                 </div>
                <ForMs/>
                <div className=''>
-                        <p>Your password must have at least 8 characters</p>
-                    <div className='pl-3 pt-3'>
-                        <p>By creating an account means you agree to the Terms</p>
-                        <p><span className='font-[800] '>& Condittion</span> and our Privacy Policy</p>
-                    </div>
-                    </div>
+                    <div className='text-sm '>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" className='inline-block'/>
+                            <div className='inline-block'>
+                                <p>Your password must have at least 8 characters</p>
+                              <div className='pl-3 pt-3'>
+                                <p>By creating an account means you agree to the Terms</p>
+                                <p><span className='font-[800] '>& Condittion</span> and our Privacy Policy</p>
+                            </div>
+                            </div>
+                            </div>
+                </div>
             </div>
             </div>
             <button className='butt'>Sign up</button>

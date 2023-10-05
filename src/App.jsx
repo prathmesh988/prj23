@@ -22,6 +22,9 @@ const router = createBrowserRouter([
   },
 ]);
 
+//You can change the routes according to your outlest coinfguraation 
+//like where you waant to place your child components of that routes using outlet
+
 function App() {
   // const [count, setCount] = useState(0)
 

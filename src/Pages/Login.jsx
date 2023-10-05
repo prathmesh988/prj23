@@ -8,7 +8,7 @@ import { ForMs } from '../components/ForMs';
 function LoGin(){
     return(
         <>
-        <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh]'>
+        <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh] mt-1.4 ml-[5vw]'>
         <div className= ' headings  w-[50vw] h-[85vh] m-10 mt-14 ml-14 pl-10  '>
         <div>
             <div className=' '>
@@ -16,10 +16,10 @@ function LoGin(){
             </div>
             <div className='flex-col basis-2 mt-4'>
                 <div>
-               <ForMs/>
+               <ForMs className='w-[50%]'/>
                 <div className='flex justify-between w-[70%] mt-8'>
-                <p className=' text-[20px] ml-2 font-[500] '><a href="">Remember me</a></p>
-                <p className=' text-[20px] font-[500]'><a href="">Forgot Password?</a></p>
+                <p className=' text-[20px] ml-2 font-[800] '><a href="">Remember me</a></p>
+                <p className=' text-[20px] font-[800]'><a href="">Forgot Password?</a></p>
                 </div>
             </div>
             </div>
