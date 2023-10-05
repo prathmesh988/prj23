@@ -1,47 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-padding: 0px;
-margin: 0px;
-/* overflow: hidden; */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-html,body{
+html,
+body {
   width: 100vw;
   height: 100vh;
 }
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-
 
 .material-symbols-outlined {
-
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-.landingpage{
-  font-family: 'Poppins', sans-serif;
+.landingpage {
+  font-family: "Poppins", sans-serif;
 }
 
-.butt{
+.butt {
   border: 1px solid transparent;
-  width:72%;
-  margin-top:1.6vh;
+  width: 72%;
+  margin-top: 1.6vh;
   padding: 0.6em;
   color: white;
-  background-color: #2563EB;
+  background-color: #2563eb;
   border-radius: 12px;
   /* height: 2%; */
 }
-
 
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -55,5 +45,3 @@ html,body{
     background-color: #f9f9f9;
   }
 } */
-
-
