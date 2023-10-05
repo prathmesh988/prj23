@@ -2,8 +2,23 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 
 import image from "./assets/landingpagephoto.png";
-import Profile from "./pages/Profile";
-import Dashboard from "./pages/Dashboard";
+
+import LoGin from "./Pages/Login";
+import SignUp from "./Pages/SignUp";
+
+const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <LoGin />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+  },
+]);
+
+//You can change the routes according to your outlest coinfguraation
+//like where you waant to place your child components of that routes using outlet
 
 function App() {
   // const [count, setCount] = useState(0)
