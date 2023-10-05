@@ -2,28 +2,21 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 
 import image from '../assets/landingpagephoto.png';
-
+import { HeadIngs } from '../components/HeadinGs';
+import { ForMs } from '../components/ForMs';
+// image  {ForMs\}
 function LoGin(){
     return(
         <>
-        <div className='flex align-baseline gap--59 w-[90vw] h-[100vh]'>
+        <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh]'>
         <div className= ' headings  w-[50vw] h-[85vh] m-10 mt-14 ml-14 pl-10  '>
         <div>
             <div className=' '>
-                <h1 className='font-bold	text-4xl pb-4'>label lab</h1>
-                <h2 className='font-bold	pb-2'>Login in to your account</h2>
-                <h3 className='font-[300]'>Welcome back! please enter your detail</h3>
+                <HeadIngs/>
             </div>
             <div className='flex-col basis-2 mt-4'>
                 <div>
-                <div className='py-3'>
-                    <span className="material-symbols-outlined pr-2 ">mail</span><input type="text" placeholder='Email' name="" id=""  className='p-1.5 border-0 border-transparent text-[20px] '/>
-                </div>
-
-                <div className='py-1.5'> 
-                    <span className="material-symbols-outlined pr-2 ">lock</span>
-                        <input type="password" placeholder='Password' name="" id=""  className='border-0 border-transparent text-[20px] p-1.5 '/>
-                </div>
+               <ForMs/>
                 <div className='flex justify-between w-[70%] mt-8'>
                 <p className=' text-[20px] ml-2 font-[500] '><a href="">Remember me</a></p>
                 <p className=' text-[20px] font-[500]'><a href="">Forgot Password?</a></p>

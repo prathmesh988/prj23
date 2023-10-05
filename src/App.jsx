@@ -8,12 +8,17 @@ import reactLogo from './assets/react.svg'
 import image from './assets/landingpagephoto.png';
 
 import LoGin from './Pages/Login';
+import SignUp from './Pages/SignUp';
 
 const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoGin/>
    
+  },
+  {
+    path:'/signup',
+    element:<SignUp/>
   },
 ]);
 
