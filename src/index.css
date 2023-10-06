@@ -1,15 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   /* overflow: hidden; */
 }
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  min-height: 100%;
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -24,7 +26,7 @@ body {
 
 .butt {
   border: 1px solid transparent;
-  width: 72%;
+  width: 100%;
   margin-top: 1.6vh;
   padding: 0.6em;
   color: white;
@@ -34,7 +36,9 @@ body {
 }
 
 .inpboxesofform {
-  width: 60%;
+  display: flex;
+  width: 100%;
+  align-items: center;
   border: 0.54px solid #e2e8f0;
   border-radius: 10px;
   
@@ -43,6 +47,14 @@ body {
   width:70%;
   border: 2px solid #678ec2;
   border-radius: 10px;
+}
+.commonborder{
+  border: 0.54px solid #e2e8f0;
+ /* padding; */
+  border-radius: 12px;
+}
+input:focus {
+  outline: none;
 }
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -56,3 +68,6 @@ body {
     background-color: #f9f9f9;
   }
 } */
+
+
+

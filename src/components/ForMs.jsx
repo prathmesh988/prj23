@@ -10,6 +10,7 @@ export function ForMs(){
     return(
         <>
             <MailInp/>
+            <br />
                
 
                 <div className='  m-0.3 p-2 inpboxesofform '> 
