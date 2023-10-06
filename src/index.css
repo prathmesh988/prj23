@@ -46,10 +46,11 @@ html,body{
   width:60%;
   border: 0.54px solid #E2E8F0;
   border-radius: 10px;
+  
 }
 .inpboxofresetpwd{
-  width:60%;
-  border: 1 solid #678ec2;
+  width:70%;
+  border: 2px solid #678ec2;
   border-radius: 10px;
   
 }
