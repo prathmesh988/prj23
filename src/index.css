@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -36,8 +35,7 @@ body {
   border-radius: 12px;
   /* height: 2%; */
 }
-.butt2{
-  
+.butt2 {
   border: 1px solid transparent;
   width: 70%;
   margin-top: 1.6vh;
@@ -53,38 +51,37 @@ body {
   align-items: center;
   border: 0.54px solid #e2e8f0;
   border-radius: 10px;
-  
 }
-.inpboxofresetpwd{
-  width:70%;
+.inpboxofresetpwd {
+  width: 70%;
   border: 2px solid #678ec2;
   border-radius: 10px;
 }
-.commonborder{
+.commonborder {
   border: 0.54px solid #e2e8f0;
- /* padding; */
+  /* padding; */
   border-radius: 12px;
 }
 input:focus {
   outline: none;
 }
 
-#root{
+#root {
   height: 100%;
 }
-.lowfonts{
+.lowfonts {
   /* font-family: 'Inter'; */
-
 }
 
-.bordergraty{
+.bordergraty {
   border-radius: 4px;
-  border: 1px solid #E2E8F0 !important;
-}bordergraty2{
+  border: 1px solid #e2e8f0 !important;
+}
+bordergraty2 {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  border: 1px solid #E2E8F0 !important;
+  border: 1px solid #e2e8f0 !important;
 }
 input::placeholder {
   font-size: 16px;
@@ -102,6 +99,3 @@ input::placeholder {
     background-color: #f9f9f9;
   }
 } */
-
-
-
