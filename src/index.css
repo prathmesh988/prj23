@@ -1,15 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+
 * {
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   /* overflow: hidden; */
 }
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  min-height: 100%;
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -24,7 +28,7 @@ body {
 
 .butt {
   border: 1px solid transparent;
-  width: 72%;
+  width: 100%;
   margin-top: 1.6vh;
   padding: 0.6em;
   color: white;
@@ -32,16 +36,59 @@ body {
   border-radius: 12px;
   /* height: 2%; */
 }
+.butt2{
+  
+  border: 1px solid transparent;
+  width: 70%;
+  margin-top: 1.6vh;
+  padding: 0.6em;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 12px;
+}
 
 .inpboxesofform {
-  width: 60%;
+  display: flex;
+  width: 100%;
+  align-items: center;
   border: 0.54px solid #e2e8f0;
   border-radius: 10px;
+  
 }
-.inpboxofresetpwd {
-  width: 60%;
-  border: 1 solid #678ec2;
+.inpboxofresetpwd{
+  width:70%;
+  border: 2px solid #678ec2;
   border-radius: 10px;
+}
+.commonborder{
+  border: 0.54px solid #e2e8f0;
+ /* padding; */
+  border-radius: 12px;
+}
+input:focus {
+  outline: none;
+}
+
+#root{
+  height: 100%;
+}
+.lowfonts{
+  /* font-family: 'Inter'; */
+
+}
+
+.bordergraty{
+  border-radius: 4px;
+  border: 1px solid #E2E8F0 !important;
+}bordergraty2{
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #E2E8F0 !important;
+}
+input::placeholder {
+  font-size: 16px;
+  /* color: #999; */
 }
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -55,3 +102,6 @@ body {
     background-color: #f9f9f9;
   }
 } */
+
+
+
