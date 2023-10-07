@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Heads from "./pages/ResetPassword";
 import OrderLabel from "./pages/OrderLabel";
 import Orders from "./pages/Orders";
+import Deposit from "./pages/Deposit";
 
 function Home() {
   return (
@@ -54,6 +55,14 @@ const router = createBrowserRouter([
     path: "/Orders",
     element: <Orders />,
   },
+  {
+    path: "/Deposit",
+    element: <Deposit />,
+  },
+  // {
+  //   path: "/Help",
+  //   element: <Help />,
+  // },
 ]);
 
 function App() {
