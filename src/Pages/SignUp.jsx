@@ -7,8 +7,9 @@ import { ForMs } from '../components/ForMs';
 function SignUp(){
     return(
         <>
-        <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh] mt-1.4 ml-[5vw]'>
-        <div className= ' headings  w-[30vw] h-[85vh] m-10 mt-14 ml-14 pl-10 pt-[5%]  '>
+        <div className='flex flex-col justify-center items-center h-[100vh]'>
+        <div className= ' landingpage  flex align-centere gap-[7.25rem] w-[80vw] h-[85vh] mt-[3%] ml-[3%] '>
+        <div className= ' headings  w-[30vw] h-[85vh]   '>
         <div>
             <div className=' '>
                 <HeadIngs/>
@@ -42,6 +43,7 @@ function SignUp(){
                         </svg><span className='font-[500] p-[0.2em] pl-[0.6vw] self-center '>Facebook</span>
                     </button>
                     
+                    
                 </div>
             </div>
         </div>
@@ -55,13 +57,13 @@ function SignUp(){
 
 
         </div>
-        <div className='w-[50vw] h-[80vh] relative top-5'>
-        <img className=' w-[105%] h-[110%]' src={image} alt='no image'/>
+        <div className='w-[745px] h-[722px] '>
+            <img className=' w-[100%] h-[100%]' src={image} alt='no image'/>
 
         </div>
 
         </div>
-
+        </div>
         </>
     )
 }

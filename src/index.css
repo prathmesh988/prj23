@@ -34,6 +34,16 @@ body {
   border-radius: 12px;
   /* height: 2%; */
 }
+.butt2{
+  
+  border: 1px solid transparent;
+  width: 70%;
+  margin-top: 1.6vh;
+  padding: 0.6em;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 12px;
+}
 
 .inpboxesofform {
   display: flex;
@@ -56,6 +66,12 @@ body {
 input:focus {
   outline: none;
 }
+
+#root{
+  height: 100%;
+}
+
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

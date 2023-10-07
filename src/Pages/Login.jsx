@@ -8,8 +8,9 @@ import { ForMs } from '../components/ForMs';
 function LoGin(){
     return(
         <>
-        <div className= ' landingpage  flex align-baseline gap-59 w-[90vw] h-[100vh] mt-1.4 ml-[5vw]'>
-        <div className= ' headings  w-[30vw] h-[85vh] m-10 mt-14 ml-14 pl-10 pt-[5%]  '>
+        <div className='  flex flex-col justify-center items-center h-[100vh]'>
+        <div className= ' lands landingpage  flex align-centere gap-[7.25rem] w-[80vw] h-[85vh] mt-[3%] ml-[3%]'>
+        <div className= ' headings  w-[30vw] h-[85vh] p-[-0.5rem]     '>
         <div>
             <div className=' '>
                 <HeadIngs/>
@@ -17,9 +18,9 @@ function LoGin(){
             <div className='flex-col basis-2 mt-4'>
                 <div>
                <ForMs className='w-[50%]'/>
-                <div className='flex justify-between w-[100%] mt-8'>
-                <p className=' text-[20px] ml-2 font-[800] '><a href="">Remember me</a></p>
-                <p className=' text-[20px] font-[800]'><a href="">Forgot Password?</a></p>
+                <div className='flex justify-between w-[100%] mt-8 text-[14px]'>
+                <p className='  ml-2 font-[800] '><a href="">Remember me</a></p>
+                <p className='  font-[800]'><a href="">Forgot Password?</a></p>
                 </div>
             </div>
             </div>
@@ -56,13 +57,14 @@ function LoGin(){
 
 
         </div>
-        <div className='w-[50vw] h-[80vh] relative top-5'>
-        <img className=' w-[105%] h-[110%]' src={image} alt='no image'/>
+        <div className=' land2  w-[745px] h-[722px] '>
+            <img className=' w-[100%] h-[100%]' src={image} alt='no image'/>
 
         </div>
 
         </div>
-        
+        </div>
+
         </>
     )
 }
