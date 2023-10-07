@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -70,8 +72,24 @@ input:focus {
 #root{
   height: 100%;
 }
+.lowfonts{
+  /* font-family: 'Inter'; */
 
+}
 
+.bordergraty{
+  border-radius: 4px;
+  border: 1px solid #E2E8F0 !important;
+}bordergraty2{
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #E2E8F0 !important;
+}
+input::placeholder {
+  font-size: 16px;
+  /* color: #999; */
+}
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

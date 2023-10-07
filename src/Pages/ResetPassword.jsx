@@ -15,7 +15,7 @@ function Heads(){
                 <div className=  'flex items-center  p-1 inpboxofresetpwd '>
                     <span className="material-symbols-outlined pr-2 ">mail</span><input type="text" placeholder='Email' name="" id=""  className='w-[91%] p-1.5 border-0 border-transparent text-[20px] '/>
                 </div>
-                <button className='butt2 w-[10%]'>Continue</button>
+                <button className='butt text-[16px] w-[100%]'>Continue</button>
                 <Link className=' font-[700] text-blue-600 pt-2' to="/login">Back to Sign in </Link>
                 <div className="flex text-[14px] pt-4 font-[500] ">
                 <h2 className=''>Don't have account? </h2> <Link className='text-blue-600 pl-[2px] ' to='/signup'>Sign Up</Link>
