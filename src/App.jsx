@@ -4,10 +4,11 @@ import reactLogo from "./assets/react.svg";
 import image from "./assets/landingpagephoto.png";
 import LoGin from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
-import Dashboard from "./pages/Dashboard";
-import Heads from "./pages/ResetPassword";
-import OrderLabel from "./pages/OrderLabel";
-import Orders from "./pages/Orders";
+import Dashboard from "./Pages/Dashboard";
+import Heads from "./Pages/ResetPassword";
+import OrderLabel from "./Pages/OrderLabel";
+import Orders from "./Pages/Orders";
+import ForgotPasswordPage from "./Pages/ResetPwd2";
 
 function Home() {
   return (
