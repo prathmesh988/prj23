@@ -21,6 +21,7 @@ const Deposit = () => {
     <>
       <div className="flex w-[100vw] overflow-x-hidden">
         <Sidebar />
+        <DepositLayout />
       </div>
     </>
   );

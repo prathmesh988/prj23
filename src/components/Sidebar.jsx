@@ -29,14 +29,16 @@ function Sidebar() {
       <div className="py-4">
         <h3 className="pb-1 text-sm">Misc</h3>
         <ul className="flex flex-col gap-2">
-          <Link to={"/Dashboard"}></Link>
-          <Link to={"/Dashboard"}></Link>
-          <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
-            Deposit
-          </li>
-          <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
-            Help
-          </li>
+          <Link to={"/Deposit"}>
+            <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
+              Deposit
+            </li>
+          </Link>
+          <Link to={"/Help"}>
+            <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
+              Help
+            </li>
+          </Link>
         </ul>
       </div>
     </section>
