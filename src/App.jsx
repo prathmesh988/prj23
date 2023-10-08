@@ -37,7 +37,10 @@ const  RedirectingChildROutes=()=>{
   useEffect(() => {
     const updatePath = () => {
       const newPath = `${location.pathname}/Dashboard`;
+      console.log(newPath)
+
       navigate(newPath);
+
       
     };
 

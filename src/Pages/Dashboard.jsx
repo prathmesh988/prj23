@@ -53,7 +53,7 @@ function DashboardSection() {
 
 const Dashboard = () => {
   return (
-    <div className="flex ">
+    <div className=" ">
       {/* <Sidebar /> */}
       <DashboardSection />
     </div>
