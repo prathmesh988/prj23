@@ -112,6 +112,11 @@ input::placeholder {
   border-radius: 15px;
 }
 
+.nice2 input{
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
 .nice input{
   margin: 0.7em;
   padding:1em;
