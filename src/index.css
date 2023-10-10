@@ -98,6 +98,30 @@ input::placeholder {
   font-size: 16px;
   /* color: #999; */
 }
+.nice,.nice2{
+  border: 1px solid  transparent;
+  background-color:  #F8FAFC;
+
+  
+}
+.nice{
+  border-radius: 15px;
+}
+.nice2{
+  padding:1em;
+  border-radius: 15px;
+}
+
+.nice input{
+  margin: 0.7em;
+  padding:1em;
+  
+}
+
+.coldy input{
+  border-radius: 4px;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -110,3 +134,7 @@ input::placeholder {
     background-color: #f9f9f9;
   }
 } */
+
+.huh input{
+  width: 100%;
+}
