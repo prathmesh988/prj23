@@ -25,10 +25,10 @@ const DepositLayout = () => {
           <div className="flex flex-col gap-2">
             <h2 className="font-bold text-sm">Chose Payment Method</h2>
             <div className="text-white flex">
-              <button className="text-center bg-green-800 w-1/2 py-2 rounded-l-md">
+              <button className="text-center bg-[#1749B8] w-1/2 py-2 rounded-l-md">
                 Stripe
               </button>
-              <button className="text-center bg-green-300 w-1/2 py-2 rounded-r-md">
+              <button className="text-center bg-[#00CA4E] w-1/2 py-2 rounded-r-md">
                 Cash App
               </button>
             </div>
