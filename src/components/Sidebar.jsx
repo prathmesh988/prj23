@@ -7,17 +7,17 @@ function Sidebar() {
       <div className="py-4">
         <h3 className="pb-1 text-sm">Home</h3>
         <ul className="flex flex-col gap-2">
-          <Link to={"/Dashboard"}>
+          <Link to={"Dashboard"}>
             <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
               Dashboard
             </li>
           </Link>
-          <Link to={"/order-label"}>
+          <Link to={"order-label"}>
             <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
               Order label
             </li>
           </Link>
-          <Link to={"/orders"}>
+          <Link to={"orders"}>
             <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
               Orders
             </li>
@@ -29,7 +29,7 @@ function Sidebar() {
       <div className="py-4">
         <h3 className="pb-1 text-sm">Misc</h3>
         <ul className="flex flex-col gap-2">
-          <Link to={"/Deposit"}>
+          <Link to={"Deposit"}>
             <li className="hover:bg-blue-50 hover:text-blue-300 px-2 rounded-md">
               Deposit
             </li>

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 * {
   box-sizing: border-box;
@@ -44,7 +46,16 @@ body {
   background-color: #2563eb;
   border-radius: 12px;
 }
-
+.butt3 {
+  border: 1px solid transparent;
+  width: 72%;
+  margin-top: 1.6vh;
+  padding: 0.6em;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 12px;
+  /* height: 2%; */
+}
 .inpboxesofform {
   display: flex;
   width: 100%;
@@ -87,6 +98,35 @@ input::placeholder {
   font-size: 16px;
   /* color: #999; */
 }
+.nice,.nice2{
+  border: 1px solid  transparent;
+  background-color:  #F8FAFC;
+
+  
+}
+.nice{
+  border-radius: 15px;
+}
+.nice2{
+  padding:1em;
+  border-radius: 15px;
+}
+
+.nice2 input{
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.nice input{
+  margin: 0.7em;
+  padding:1em;
+  
+}
+
+.coldy input{
+  border-radius: 4px;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -99,3 +139,7 @@ input::placeholder {
     background-color: #f9f9f9;
   }
 } */
+
+.huh input{
+  width: 100%;
+}

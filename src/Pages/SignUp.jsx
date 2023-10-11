@@ -30,10 +30,10 @@ function SignUp(){
             </div>
             <p className='text-[12px]'>Your password have at least 8 characters.</p>
             <div className='flex gap-1 pt-1 items-start'>
-            <input type='checkbox' className=' bordergraty2   overflow-hidden shrink-0 mt-[0.15rem]' />
-            <div className='text-[12px]'>
-            <p className=''>By creating an account means you agree to the <span>Terms</span></p>
-<p>& Conditions and our Privacy Policy</p></div>
+            <input type='checkbox' className=' bordergraty2   overflow-hidden shrink-0 mt-[0.15rem] pl-[0.1rem]' />
+            <div className='text-[12px] pl-1'>
+            <p className=''>By creating an account means you agree to the <span className='font-[600]'>Terms</span></p>
+<p><span className='font-[600]'>& Conditions </span>and our Privacy Policy</p></div>
 
             </div>
             <button className='butt text-[16px] w-[100%]'>Sign up</button>

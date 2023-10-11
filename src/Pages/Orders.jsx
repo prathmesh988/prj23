@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
 const OrderLayout = () => {
   return (
@@ -62,7 +62,7 @@ const Orders = () => {
   return (
     <>
       <div className="flex w-[100vw] overflow-x-hidden">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <OrderLayout />
       </div>
     </>

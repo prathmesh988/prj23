@@ -7,7 +7,7 @@ const DepositLayout = () => {
       <section className="w-[85vw]">
         <div className="py-4 border-b-2 px-6">
           <div>
-            <h1 className="text-2xl font-bold">Orders</h1>
+            <h1 className="text-2xl font-bold">Deposit</h1>
             <p className="text-xs">Check your progress</p>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Deposit = () => {
   return (
     <>
       <div className="flex w-[100vw] overflow-x-hidden">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <DepositLayout />
       </div>
     </>
