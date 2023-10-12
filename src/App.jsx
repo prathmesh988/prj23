@@ -54,7 +54,7 @@ const  RedirectingChildROutes=()=>{
 const OuletPage=()=>{
  return(
   <>
-  <div className="flex">
+  <div className="flex ">
 
 
     <Sidebar/>
@@ -96,7 +96,7 @@ const router = createBrowserRouter([
       },
       {
         path: "order-label",
-        element: <OrderLabel />,
+        element: <OrderLabel/>,
       },
       {
         path: "Orders",

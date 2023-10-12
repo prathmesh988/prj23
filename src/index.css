@@ -9,7 +9,7 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 html,
 body {
@@ -142,4 +142,9 @@ input::placeholder {
 
 .huh input{
   width: 100%;
+}
+
+.buttioninorderlab{
+  border-radius: 4px;
+background: #2563EB;
 }
