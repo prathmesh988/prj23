@@ -1,7 +1,27 @@
 import React from "react";
 // import Sidebar from "../components/Sidebar";
 
-const OrderLayout = () => {
+function TableContent() {
+  return (
+    <tr class="font-bold">
+      <td class="py-2 px-4">
+        <input type="checkbox" />
+      </td>
+      <td class="py-2 px-4">SKN1200</td>
+      <td class="py-2 px-4">23060923524770818861</td>
+      <td class="py-2 px-4">Robert Fox</td>
+      <td class="py-2 px-4">01.01.2022</td>
+      <td class="py-2 px-4">
+        <div className="rounded-lg bg-blue-100 w-max px-2 py-1 font-normal text-blue-600">
+          <p>Continuing</p>
+        </div>
+      </td>
+      <td class="py-2 px-4">$4.00</td>
+    </tr>
+  );
+}
+
+const OrderLayout = ({ rows, deleteRow, editRow }) => {
   return (
     <section className="flex flex-col w-3/4 font-semibold">
       <section className="w-[85vw]">
@@ -12,47 +32,29 @@ const OrderLayout = () => {
           </div>
         </div>
       </section>
-      <section className="px-6 py-2">
-        <h2 className="py- border-b-4 border-blue-600 w-max">All Orders</h2>
-        <section className="py-4">
-          <div className="w-full flex justify-between border-[1px] px-2 py-1 rounded-md">
-            <div className="flex flex-col gap-8">
-              <div className="flex gap-4">
-                <input type="checkbox" name="" id="" />
-                <h3>Order ID</h3>
-              </div>
-              <div className="flex gap-4">
-                <input type="checkbox" name="" id="" />
-                <h3>Order ID</h3>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-8">
-              <h3>Tracking ID</h3>
-              <h3>Tracking ID</h3>
-            </div>
-            <div className="flex flex-col gap-8">
-              <h3>Name</h3>
-              <h3>Name</h3>
-            </div>
-            <div className="flex flex-col gap-8">
-              <h3>Date</h3>
-              <h3>Date</h3>
-            </div>
-            <div className="flex flex-col gap-8">
-              <h3>Status</h3>
-              <h3>Status</h3>
-            </div>
-            <div className="flex flex-col gap-8">
-              <h3>Total Price</h3>
-              <h3>Total Price</h3>
-            </div>
-          </div>
-          <form
-            action=""
-            className="w-[] flex justify-between px-2 py-1 font-serif"
-          ></form>
-        </section>
+      <section className="px-6 py-2 min-w-[90vw]">
+        <table class="min-w-full bg-white text-xs">
+          <thead class="bg-blue-50 text-gray-400 font-light">
+            <tr>
+              <th class="py-2 px-4 text-left">
+                <input type="checkbox" />
+              </th>
+              <th class="py-2 px-4 text-left">Order ID</th>
+              <th class="py-2 px-4 text-left">tracking ID</th>
+              <th class="py-2 px-4 text-left">Name</th>
+              <th class="py-2 px-4 text-left">Date</th>
+              <th class="py-2 px-4 text-left">Status</th>
+              <th class="py-2 px-4 text-left">Total price</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <TableContent />
+            <TableContent />
+            <TableContent />
+            <TableContent />
+            <TableContent />
+          </tbody>
+        </table>
       </section>
     </section>
   );
