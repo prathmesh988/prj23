@@ -1,6 +1,12 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
+{
+  /* <section className="flex flex-col w-3/4 font-semibold">
+      <section className="w-[85vw]">
+        <div className="py-4 border-b-2 px-6"></div> */
+}
+
 const OrderLabel = () => {
   return (
     
@@ -20,15 +26,23 @@ const OrderLabel = () => {
                         <span className="h-[40px] p-1 ml-3  w-[100%] "><input type="text" className="pl-2 w-[97%] " placeholder="USPS Priority" name="" id="" /></span>
                     </div>  
 
-                      <div className="grow-[2]">
-
-                          <h3 className="font-[600] text-[16px]  pb-1 pl-[5em]">PACKAGE WEIGHT (70 LBS MAX)</h3>
-                            <span className="h-[40px]"><input type="number"  className='ml-[4em] w-[80%]'placeholder="0 LBS" name="" id="" /></span>
-                      </div>  
-
-                  </div> 
-                  </div>
-      <div className="  flex flex-col items-center justify-center w-[100%] coldy">
+            <div className="grow-[2]">
+              <h3 className="font-[600] text-[16px]  pb-1 pl-[5em]">
+                PACKAGE WEIGHT (70 LBS MAX)
+              </h3>
+              <span className="h-[40px]">
+                <input
+                  type="number"
+                  className="ml-[4em] w-[80%]"
+                  placeholder="0 LBS"
+                  name=""
+                  id=""
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="  flex flex-col items-center justify-center w-[100%] coldy">
           <div className="flex flex-col items-center justify-between  w-[95%] overflow-y-auto">
             <div className="flex gap-[2rem] w-[100%] overflow-x-hidden ">
             <div className="flex flex-col gap-[0.7em] grow-[2.6]">
@@ -75,52 +89,71 @@ const OrderLabel = () => {
                           <h3 className="pl-1 font-[600]">Company/Reference Number (optional)</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="Company" name="" id="" />
-
-                          </span>
-                        </label>
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">Street*</h3>
+                          <input
+                            type="text"
+                            placeholder="Company"
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">Street*</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder=" Street " name="" id="" />
-
-                          </span>
-                        </label>
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">Street 2 (optional)</h3>
+                          <input
+                            type="text"
+                            placeholder=" Street "
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">Street 2 (optional)</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="Street 2" name="" id="" />
+                          <input
+                            type="text"
+                            placeholder="Street 2"
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
 
-                          </span>
-                        </label>
-
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">City*</h3>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">City*</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="City" name="" id="" />
+                          <input type="text" placeholder="City" name="" id="" />
+                        </span>
+                      </label>
 
-                          </span>
-                        </label>
-
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">State *</h3>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">State *</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="State" name="" id="" />
+                          <input
+                            type="text"
+                            placeholder="State"
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
 
-                          </span>
-                        </label>
-
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">Zip Code *</h3>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">Zip Code *</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="Zip Code  " name="" id="" />
-
-                          </span>
+                          <input
+                            type="text"
+                            placeholder="Zip Code  "
+                            name=""
+                            id=""
+                          />
+                        </span>
                       </label>
                       </div>
                     </div>
@@ -171,59 +204,76 @@ const OrderLabel = () => {
                           <h3 className="pl-1 font-[600]">Company/Reference Number (optional)</h3>
                         {/* <input type="text" placeholder="Name" name="" id="" /> */}
                         <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="Company" name="" id="" />
-
-                          </span>
-                        </label>
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">Street*</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder=" Street " name="" id="" />
-
-                          </span>
-                        </label>
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">Street 2 (optional)</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="Street 2" name="" id="" />
-
-                          </span>
-                        </label>
-
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">City*</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="City" name="" id="" />
-
-                          </span>
-                        </label>
-
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">State *</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="State" name="" id="" />
-
-                          </span>
-                        </label>
-
-                        <label className='text-[14px]'>
-                          <h3 className="pl-1 font-[600]">Zip Code *</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                                <input type="text" placeholder="Zip Code  " name="" id="" />
-
-                          </span>
+                          <input
+                            type="text"
+                            placeholder="Company"
+                            name=""
+                            id=""
+                          />
+                        </span>
                       </label>
-                      </div>
-                    </div>
-                    </div>
-                  
-                </div>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">Street*</h3>
+                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
+                        <span className="pl-2 pb-1 pt-2">
+                          <input
+                            type="text"
+                            placeholder=" Street "
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">Street 2 (optional)</h3>
+                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
+                        <span className="pl-2 pb-1 pt-2">
+                          <input
+                            type="text"
+                            placeholder="Street 2"
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
 
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">City*</h3>
+                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
+                        <span className="pl-2 pb-1 pt-2">
+                          <input type="text" placeholder="City" name="" id="" />
+                        </span>
+                      </label>
+
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">State *</h3>
+                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
+                        <span className="pl-2 pb-1 pt-2">
+                          <input
+                            type="text"
+                            placeholder="State"
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
+
+                      <label className="text-[14px]">
+                        <h3 className="pl-1 font-[600]">Zip Code *</h3>
+                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
+                        <span className="pl-2 pb-1 pt-2">
+                          <input
+                            type="text"
+                            placeholder="Zip Code  "
+                            name=""
+                            id=""
+                          />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
          

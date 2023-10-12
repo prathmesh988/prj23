@@ -1,7 +1,12 @@
-import { createBrowserRouter, Link, Outlet, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Link,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useNavigate , useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import reactLogo from "./assets/react.svg";
 import image from "./assets/landingpagephoto.png";
@@ -15,7 +20,7 @@ import Deposit from "./Pages/Deposit";
 import Sidebar from "./components/Sidebar";
 // import { Outlet } from "react-router-dom";
 function Home() {
-  console.log('home')
+  console.log("home");
   return (
     <div className=" flex gap-4 w-[100vw] h-[100vh] justify-center items-center">
       <Link to={"/main"}>
@@ -30,22 +35,20 @@ function Home() {
     </div>
   );
 }
-const  RedirectingChildROutes=()=>{
+const RedirectingChildROutes = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
     const updatePath = () => {
       const newPath = `${location.pathname}/Dashboard`;
-      console.log(newPath)
+      console.log(newPath);
 
       navigate(newPath);
-
-      
     };
 
     updatePath();
-  },[]);
+  }, []);
   return (
 
     <><div></div></>
@@ -83,12 +86,12 @@ const router = createBrowserRouter([
   },
 
   {
-    path:'/main',
-    element:<OuletPage/>,
-    children:[
+    path: "/main",
+    element: <OuletPage />,
+    children: [
       {
-        path:'/main',
-        element:<RedirectingChildROutes/>,
+        path: "/main",
+        element: <RedirectingChildROutes />,
       },
       {
         path: "Dashboard",
@@ -105,14 +108,15 @@ const router = createBrowserRouter([
       {
         path: "Deposit",
         element: <Deposit />,
-      },],
-    }
-  
-      // {
-      //   path: "/Help",
-      //   element: <Help />,
-      // },
-  ]);
+      },
+    ],
+  },
+
+  // {
+  //   path: "/Help",
+  //   element: <Help />,
+  // },
+]);
 
 function App() {
   return (
