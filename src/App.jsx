@@ -18,6 +18,7 @@ import OrderLabel from "./Pages/OrderLabel";
 import Orders from "./pages/Orders";
 import Deposit from "./Pages/Deposit";
 import Sidebar from "./components/Sidebar";
+import CommiSion from './Pages/commision'
 // import { Outlet } from "react-router-dom";
 function Home() {
   console.log("home");
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
         path: "Deposit",
         element: <Deposit />,
       },
+      {
+        path: 'commision',
+        element: <CommiSion/>
+      }
     ],
   },
 

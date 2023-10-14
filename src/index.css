@@ -149,3 +149,8 @@ input::placeholder {
   border-radius: 4px;
 background: #2563EB;
 }
+
+
+.my-fit-content-height {
+  height: fit-content;
+}
