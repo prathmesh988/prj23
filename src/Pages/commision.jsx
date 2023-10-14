@@ -95,23 +95,29 @@ function wz() {
         <section className="w-[85vw]">
           <div className="py-4 border-b-2 px-6">
             <div>
-              <h1 className="text-2xl font-bold">Orders</h1>
-              <p className="text-xs">Check your progress</p>
+              <h1 className="text-2xl font-bold">Commission</h1>
+              <p className="text-xs">Admin Pannel</p>
             </div>
           </div>
         </section>
         <section className="  px-6 py-2 flex justify-center scrollable-section overflow-y-auto max-h-[90vh]">
-          <div className="  my-fit-content-height flex justify-center gap-10 p-4 border-[1px] rounded-[10px] border-transparen bg-slate-50">
+          <div className="  mb-5 my-fit-content-height flex justify-center gap-10 p-4 border-[1px] rounded-[10px] border-transparen bg-slate-50">
             <div className="flex flex-col gap-5">
               {loopthrough(MainCommision)}
             </div>
             <div className="flex flex-col gap-5">
               {loopthrough(MainCommision2)}
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 pb-3" >
               {loopthrough(MainCommision3)}
+              <div className="flex  flex-row-reverse ">
+                <button className="buttioninorderlab text-white	px-[3em] py-2">Submit</button></div>
             </div>
+            
+            
+           
           </div>
+          
           {/* iske niche daal -> Outlet */}
         </section>
       </section>
