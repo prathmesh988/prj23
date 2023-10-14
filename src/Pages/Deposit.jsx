@@ -3,15 +3,8 @@ import Sidebar from "../components/Sidebar";
 
 const DepositLayout = () => {
   return (
-    <section className="flex flex-col w-3/4 gap-10">
-      <section className="w-[85vw]">
-        <div className="py-4 border-b-2 px-6">
-          <div>
-            <h1 className="text-2xl font-bold">Deposit</h1>
-            <p className="text-xs">Check your progress</p>
-          </div>
-        </div>
-      </section>
+    <section className="flex flex-col w-[100%] gap-10 overflow-x-hidden  mb-1">
+     
       <section className="self-center flex flex-col gap-5">
         <section className=" flex flex-col w-[700px] gap-4 bg-gray-100 px-6 py-5">
           <div className="flex flex-col gap-2">
@@ -86,7 +79,7 @@ const DepositLayout = () => {
               </div>
               <p className="font-bold">$421.00</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               <div className="flex gap-2 w-full">
                 <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
                 <div>
@@ -108,10 +101,16 @@ const DepositLayout = () => {
 const Deposit = () => {
   return (
     <>
-      <div className="flex w-[100vw] overflow-x-hidden">
-        {/* <Sidebar /> */}
-        <DepositLayout />
+      <div className="landingpage grow overflow-x-hidden">
+      <div className="pl-1  ">
+            <h1 className="font-[700] pb-1">Order div</h1>
+            <h3 className="font-[300]  ">Purchase div Here</h3>
+            <hr  className=" py-1"/>
       </div>
+          <div className="formsss h-[90vh] overflow-auto  ">
+           <DepositLayout />
+        </div>
+    </div>
     </>
   );
 };

@@ -9,10 +9,11 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  overflow: hidden;
+ 
 }
 html,
 body {
+  overflow: hidden;
   /* width: 100vw; */
   min-height: 100%;
 }
