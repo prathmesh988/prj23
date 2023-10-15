@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
- 
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body {
@@ -99,32 +99,30 @@ input::placeholder {
   font-size: 16px;
   /* color: #999; */
 }
-.nice,.nice2{
-  border: 1px solid  transparent;
-  background-color:  #F8FAFC;
-
-  
+.nice,
+.nice2 {
+  border: 1px solid transparent;
+  background-color: #f8fafc;
 }
-.nice{
+.nice {
   border-radius: 15px;
 }
-.nice2{
-  padding:1em;
+.nice2 {
+  padding: 1em;
   border-radius: 15px;
 }
 
-.nice2 input{
+.nice2 input {
   padding: 5px;
   border: 1px solid transparent;
   border-radius: 10px;
 }
-.nice input{
+.nice input {
   margin: 0.7em;
-  padding:1em;
-  
+  padding: 1em;
 }
 
-.coldy input{
+.coldy input {
   border-radius: 4px;
 }
 
@@ -141,11 +139,11 @@ input::placeholder {
   }
 } */
 
-.huh input{
+.huh input {
   width: 100%;
 }
 
-.buttioninorderlab{
+.buttioninorderlab {
   border-radius: 4px;
-background: #2563EB;
+  background: #2563eb;
 }

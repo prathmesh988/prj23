@@ -1,15 +1,12 @@
-import React from "react";
-// import Sidebar from "../components/Sidebar";
-
 function TableHeading() {
   return (
     <tr>
       <th class="py-2 px-4 text-left">
         <input type="checkbox" />
       </th>
-      <th class="py-2 px-4 text-left">Order ID</th>
-      <th class="py-2 px-4 text-left">tracking ID</th>
-      <th class="py-2 px-4 text-left">Name</th>
+      <th class="py-2 px-4 text-left">User Name</th>
+      <th class="py-2 px-4 text-left">Payment Method</th>
+      <th class="py-2 px-4 text-left">ID</th>
       <th class="py-2 px-4 text-left">Date</th>
       <th class="py-2 px-4 text-left">Status</th>
       <th class="py-2 px-4 text-left">Total price</th>
@@ -23,12 +20,12 @@ function TableContent() {
       <td class="py-2 px-4">
         <input type="checkbox" />
       </td>
-      <td class="py-2 px-4">SKN1200</td>
-      <td class="py-2 px-4">23060923524770818861</td>
-      <td class="py-2 px-4">Robert Fox</td>
+      <td class="py-2 px-4">Bob</td>
+      <td class="py-2 px-4">CashApp</td>
+      <td class="py-2 px-4">645c-825623fe6756</td>
       <td class="py-2 px-4">01.01.2022</td>
       <td class="py-2 px-4">
-        <div className="rounded-lg bg-blue-100 w-max px-2 py-1 font-normal text-blue-600">
+        <div className="rounded-lg bg-green-200 w-max px-2 py-1 font-normal text-green-600">
           <p>Continuing</p>
         </div>
       </td>
@@ -37,7 +34,7 @@ function TableContent() {
   );
 }
 
-const OrderLayout = ({ rows, deleteRow, editRow }) => {
+export default function Transactions() {
   return (
     <section className="flex flex-col w-3/4 font-semibold">
       <section className="w-[85vw]">
@@ -64,17 +61,4 @@ const OrderLayout = ({ rows, deleteRow, editRow }) => {
       </section>
     </section>
   );
-};
-
-const Orders = () => {
-  return (
-    <>
-      <div className="flex w-[100vw] overflow-x-hidden">
-        {/* <Sidebar /> */}
-        <OrderLayout />
-      </div>
-    </>
-  );
-};
-
-export default Orders;
+}

@@ -18,6 +18,9 @@ import OrderLabel from "./Pages/OrderLabel";
 import Orders from "./pages/Orders";
 import Deposit from "./Pages/Deposit";
 import Sidebar from "./components/Sidebar";
+import Transections from "./Pages/Transactions";
+import UserPage from "./Pages/UserPage";
+import Commission from "./Pages/Commision";
 // import { Outlet } from "react-router-dom";
 function Home() {
   console.log("home");
@@ -50,22 +53,21 @@ const RedirectingChildROutes = () => {
     updatePath();
   }, []);
   return (
-
-    <><div></div></>
-  )
-}
-const OuletPage=()=>{
- return(
-  <>
-  <div className="flex ">
-
-
-    <Sidebar/>
-    <Outlet/>
-  </div>
-  </>
- ) 
-}
+    <>
+      <div></div>
+    </>
+  );
+};
+const OuletPage = () => {
+  return (
+    <>
+      <div className="flex ">
+        <Sidebar />
+        <Outlet />
+      </div>
+    </>
+  );
+};
 
 const router = createBrowserRouter([
   {
@@ -99,7 +101,7 @@ const router = createBrowserRouter([
       },
       {
         path: "order-label",
-        element: <OrderLabel/>,
+        element: <OrderLabel />,
       },
       {
         path: "Orders",
@@ -108,6 +110,18 @@ const router = createBrowserRouter([
       {
         path: "Deposit",
         element: <Deposit />,
+      },
+      {
+        path: "Transactions",
+        element: <Transections />,
+      },
+      {
+        path: "UserPage",
+        element: <UserPage />,
+      },
+      {
+        path: "Commission",
+        element: <Commission />,
       },
     ],
   },
