@@ -17,12 +17,16 @@ const data = [
   { month: "August", spent: 189 },
   { month: "September", spent: 239 },
   { month: "October", spent: 349 },
+  { month: "July", spent: 278 },
+  { month: "August", spent: 189 },
+  { month: "September", spent: 239 },
+  { month: "October", spent: 349 },
 ];
 
 const SpentLineChart = () => (
   <div>
     <AreaChart
-      width={900}
+      width={1100}
       height={300}
       data={data}
       margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
@@ -47,50 +51,87 @@ function DashboardSection() {
         </div>
       </div>
 
-      <section className="px-6 py-2 w-max-[70vw]">
-        <section className="max-w-4/5 shadow-lg px-6 py-4 flex justify-between">
-          <div className="">
-            <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+      <div className="flex">
+        <section className="px-6 py-2 w-max-[70vw]">
+          <section className="min-w-[50vw] shadow-lg px-6 py-4 flex justify-between gap-20">
+            <div className="">
+              <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
+              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+                <h1 className="font-bold text-lg">$280.00</h1>
+              </div>
+              <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
-            <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
-          </div>
-          <div className="">
-            <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="">
+              <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
+              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+                <h1 className="font-bold text-lg">$280.00</h1>
+              </div>
+              <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
-            <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
-          </div>
-          <div className="">
-            <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="">
+              <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
+              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+                <h1 className="font-bold text-lg">$280.00</h1>
+              </div>
+              <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
-            <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
-          </div>
-          <div className="">
-            <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="">
+              <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
+              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+                <h1 className="font-bold text-lg">$280.00</h1>
+              </div>
+              <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
-            <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
-          </div>
-        </section>
+          </section>
 
-        <section className="min-w-4/5 shadow-lg  py-4 flex flex-col items-end gap-6 my-20">
-          <SpentLineChart />
-          <div className="self-end px-10 text-white flex gap-4">
-            <button className="px-10 py-1 bg-blue-500 rounded-sm">
-              Discord
-            </button>
-            <button className="px-10 py-1 bg-blue-500 rounded-sm">
-              Telegram{" "}
-            </button>
+          <section className="min-w-4/5 shadow-lg  py-4 flex flex-col  gap-6 my-20">
+            <SpentLineChart />
+            <div className="self-end px-10 text-white flex gap-4">
+              <button className="px-10 py-1 bg-blue-500 rounded-sm">
+                Discord
+              </button>
+              <button className="px-10 py-1 bg-blue-500 rounded-sm">
+                Telegram{" "}
+              </button>
+            </div>
+          </section>
+        </section>
+        <section className="p-4 border-l-[2px]">
+          <h3 className="font-bold text-xs">Website Transaction History</h3>
+          <div className="text-sm pt-4 flex flex-col gap-3">
+            <div className="flex justify-between">
+              <div className="flex gap-2 w-full">
+                <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
+                <div>
+                  <p className="text-xs font-semibold">Payment from</p>
+                  <p className="text-xs font-light">Dec 23, 04:00PM</p>
+                </div>
+              </div>
+              <p className="font-semibold">$421.00</p>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex gap-2 w-full">
+                <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
+                <div>
+                  <p className="text-xs font-semibold">Payment from</p>
+                  <p className="text-xs font-light">Dec 23, 04:00PM</p>
+                </div>
+              </div>
+              <p className="font-semibold">$421.00</p>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex gap-2 w-full">
+                <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
+                <div>
+                  <p className="text-xs font-semibold">Payment from</p>
+                  <p className="text-xs font-light">Dec 23, 04:00PM</p>
+                </div>
+              </div>
+              <p className="font-semibold">$421.00</p>
+            </div>
           </div>
         </section>
-      </section>
+      </div>
     </section>
   );
 }

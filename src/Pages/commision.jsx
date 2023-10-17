@@ -1,130 +1,96 @@
-const MainCommision = () => {
-    return (
-      <>
-        <div>
-        <h1 className='pb-1'>Type</h1>
-          <input
-            type="text"
-            name=""
-            id=""
-            className="py-1 px-1 border-[1px]  rounded-[10px]  border-transparent"
-            placeholder=""
-          />
-            
-        </div>
-      </>
-    );
-  };
-  
-  const MainCommision3= () => {
-    return (
-      <>
-        <div>
-        <h1 className='pb-1'>Purchase</h1>
-          <input
-            type="text"
-            name=""
-            id=""
-            className="py-1 px-1 border-[1px]  rounded-[10px] border-transparent"
-            placeholder=""
-          />
-            
-        </div>
-      </>
-    );
-  };
-  
-  const MainCommision2 = () => {
-    return (
-      <>
-        <div>
-          <h1 className='pb-1'>Commission</h1>
-          <input
-            type="text"
-            name=""
-            id=""
-            className="py-1 px-1 border-[1px]  rounded-[10px] border-transparent"
-            placeholder=""
-          />
-        </div>
-      </>
-    );
-  }
-  
-  function loopthrough(ComP) {
-    const list = [];
-    for (let index = 0; index < 19; index++) {
-      list.push(<ComP key={index} />);
-    }
-    return list;
-  }
-  
-//   const CommiSion = () => {
-//     return (
-//       <>
-//         <div className="flex flex-col w-[100%] =">
-//         <div className="py-4 border-b-2 px-6  ">
-//         <div>
-//           <h1 className="text-2xl font-bold">Dashboard</h1>
-//           <p className="text-xs">Check your progress</p>
-//         </div>
-//       </div>
-//         <div className=" flex justify-center">
-//           <div className="flex justify-center w-[50%] h-[80%] bg-slate-300	">
-//              <div className="flex flex-col gap-5">
-//             { loopthrough(MainCommision)}
-//                {/* Pass MainCommision2 as a function */}
-//             </div>
-//             <div className="flex flex-col gap-5"> 
-//             {loopthrough(MainCommision2)}
-//             </div>
-//             <div className="flex flex-col gap-5"> 
-//             {loopthrough(MainCommision3)}
-//             </div>
-//           </div>
-//         </div>
-//         </div>
-        
-//       </>
-//     );
-//   }
-  
-function wz() {
-    return (
-      <section className="flex flex-col font-semibold">
-        <section className="w-[85vw]">
-          <div className="py-4 border-b-2 px-6">
-            <div>
-              <h1 className="text-2xl font-bold">Commission</h1>
-              <p className="text-xs">Admin Pannel</p>
-            </div>
+function Inputs() {
+  return (
+    <div className="flex gap-5 w-full">
+      <div className="flex flex-col gap-2 w-full ">
+        <label htmlFor="" className="font-bold  text-sm">
+          Type
+        </label>
+        <input
+          type="text"
+          className="border-[1px] rounded-[4px] px-2 py-2 leading-snug font-normal  border-[#F2F2F2] "
+        />
+      </div>
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="" className="font-bold  text-sm">
+          Commission
+        </label>
+        <input
+          type="text"
+          className="border-[1px] rounded-[4px] px-2 py-2 leading-snug font-normal text-sm border-[#F2F2F2] "
+        />
+      </div>
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="" className="font-bold  text-sm">
+          Purchase Price
+        </label>
+        <input
+          type="text"
+          className="border-[1px] rounded-[4px] px-2 py-2 leading-snug font-normal text-sm border-[#F2F2F2] "
+        />
+      </div>
+    </div>
+  );
+}
+
+function FormsComp() {
+  return (
+    <form action="" className="flex flex-col gap-7 pt-2 text-sm w-[50vw] ">
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <Inputs />
+      <button
+        type="submit"
+        className="px-10 py-1 bg-blue-500 rounded-sm text-white w-max self-end"
+      >
+        Submit
+      </button>
+    </form>
+  );
+}
+
+export default function Commission() {
+  return (
+    <section className="flex flex-col w-3/4 font-semibold">
+      <section className="w-[85vw]">
+        <div className="py-4 border-b-2 px-6">
+          <div>
+            <h1 className="text-2xl font-bold">Orders</h1>
+            <p className="text-xs">Check your progress</p>
           </div>
-        </section>
-        <section className="  px-6 py-2 flex justify-center scrollable-section overflow-y-auto max-h-[90vh]">
-          <div className="  mb-5 my-fit-content-height flex justify-center gap-10 p-4 border-[1px] rounded-[10px] border-transparen bg-slate-50">
-            <div className="flex flex-col gap-5">
-              {loopthrough(MainCommision)}
-            </div>
-            <div className="flex flex-col gap-5">
-              {loopthrough(MainCommision2)}
-            </div>
-            <div className="flex flex-col gap-5 pb-3" >
-              {loopthrough(MainCommision3)}
-              <div className="flex  flex-row-reverse ">
-                <button className="buttioninorderlab text-white	px-[3em] py-2">Submit</button></div>
-            </div>
-            
-            
-           
-          </div>
-          
-          {/* iske niche daal -> Outlet */}
-        </section>
+        </div>
       </section>
-    );
-  }
-  
-//   export default wz;
-  
-  export default wz;
-  
+      <section className="px-6 py-2 min-w-[90vw] flex justify-center overflow-y-auto max-h-[90vh]">
+        <div className="bg-[#F8FAFC] px-5 shadow-xl h-min py-2 mt-8">
+          <FormsComp />
+        </div>
+      </section>
+    </section>
+  );
+}
+
+function wz() {
+  return (
+    <section className="flex flex-col w-3/4 font-semibold">
+      <section className="w-[85vw]">
+        <div className="py-4 border-b-2 px-6">
+          <div>
+            <h1 className="text-2xl font-bold">Orders</h1>
+            <p className="text-xs">Check your progress</p>
+          </div>
+        </div>
+      </section>{" "}
+      <section className="px-6 py-2 min-w-[90vw] flex justify-center ">
+        {/* iske niche daal -> Outlet */}
+      </section>
+    </section>
+  );
+}

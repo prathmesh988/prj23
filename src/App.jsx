@@ -18,7 +18,10 @@ import OrderLabel from "./Pages/OrderLabel";
 import Orders from "./pages/Orders";
 import Deposit from "./Pages/Deposit";
 import Sidebar from "./components/Sidebar";
-// import { Outlet } from "react-router-dom";
+import Transactions from "./Pages/Transactions";
+import UserPage from "./Pages/UserPage";
+import Commission from "./Pages/commision";
+
 function Home() {
   console.log("home");
   return (
@@ -108,13 +111,20 @@ const router = createBrowserRouter([
         path: "Deposit",
         element: <Deposit />,
       },
+      {
+        path: "Commission",
+        element: <Commission />,
+      },
+      {
+        path: "UserPage",
+        element: <UserPage />,
+      },
+      {
+        path: "Transactions",
+        element: <Transactions />,
+      },
     ],
   },
-
-  // {
-  //   path: "/Help",
-  //   element: <Help />,
-  // },
 ]);
 
 function App() {

@@ -46,6 +46,10 @@ export default function Transactions() {
         </div>
       </section>
       <section className="px-6 py-2 min-w-[90vw]">
+        <div className="w-max mb-2">
+          <h2 className="py-3 px-3">All Orders</h2>
+          <div className="w-full border-2 border-blue-500 rounded-md "></div>
+        </div>
         <table class="min-w-full bg-white text-xs">
           <thead class="bg-blue-50 text-gray-400 font-light">
             <TableHeading />
