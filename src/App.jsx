@@ -8,8 +8,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-import reactLogo from "./assets/react.svg";
-import image from "./assets/landingpagephoto.png";
 import LoGin from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import Dashboard from "./Pages/Dashboard";

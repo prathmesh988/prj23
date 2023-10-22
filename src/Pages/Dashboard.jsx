@@ -89,6 +89,9 @@ function DashboardSection() {
               <p className="text-xs font-medium text-[#64748B]">
                 Overall spent
               </p>
+              <div>
+                <h1 className="font-bold text-lg">$280.00</h1>
+              </div>
             </div>
             <div className="pl-7">
               <SpentLineChart />
@@ -103,38 +106,40 @@ function DashboardSection() {
             </div>
           </section>
         </section>
-        <section className="p-4 border-l-[2px]">
-          <h3 className="font-bold text-xs">Website Transaction History</h3>
-          <div className="text-sm pt-4 flex flex-col gap-3">
-            <div className="flex justify-between">
-              <div className="flex gap-2 w-full">
-                <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
-                <div>
-                  <p className="text-xs font-semibold">Payment from</p>
-                  <p className="text-xs font-light">Dec 23, 04:00PM</p>
+        <section className="p-4 border-l-[2px]  ">
+          <div className="w-[20vw] pl-4">
+            <h3 className="font-bold text-xs">Website Transaction History</h3>
+            <div className="text-sm pt-4 flex flex-col gap-3">
+              <div className="flex justify-between">
+                <div className="flex gap-2 w-full">
+                  <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
+                  <div>
+                    <p className="text-xs font-semibold">Payment from</p>
+                    <p className="text-xs font-light">Dec 23, 04:00PM</p>
+                  </div>
                 </div>
+                <p className="font-semibold">$421.00</p>
               </div>
-              <p className="font-semibold">$421.00</p>
-            </div>
-            <div className="flex justify-between">
-              <div className="flex gap-2 w-full">
-                <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
-                <div>
-                  <p className="text-xs font-semibold">Payment from</p>
-                  <p className="text-xs font-light">Dec 23, 04:00PM</p>
+              <div className="flex justify-between">
+                <div className="flex gap-2 w-full">
+                  <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
+                  <div>
+                    <p className="text-xs font-semibold">Payment from</p>
+                    <p className="text-xs font-light">Dec 23, 04:00PM</p>
+                  </div>
                 </div>
+                <p className="font-semibold">$421.00</p>
               </div>
-              <p className="font-semibold">$421.00</p>
-            </div>
-            <div className="flex justify-between">
-              <div className="flex gap-2 w-full">
-                <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
-                <div>
-                  <p className="text-xs font-semibold">Payment from</p>
-                  <p className="text-xs font-light">Dec 23, 04:00PM</p>
+              <div className="flex justify-between">
+                <div className="flex gap-2 w-full">
+                  <div className="w-8 h-8 bg-green-100 rounded-sm"></div>
+                  <div>
+                    <p className="text-xs font-semibold">Payment from</p>
+                    <p className="text-xs font-light">Dec 23, 04:00PM</p>
+                  </div>
                 </div>
+                <p className="font-semibold">$421.00</p>
               </div>
-              <p className="font-semibold">$421.00</p>
             </div>
           </div>
         </section>

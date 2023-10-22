@@ -13,6 +13,7 @@
 }
 html,
 body {
+  font-size: 18px;
   overflow: hidden;
   /* width: 100vw; */
   min-height: 100%;
@@ -81,8 +82,9 @@ input:focus {
 #root {
   height: 100%;
 }
-.lowfonts {
-  /* font-family: 'Inter'; */
+
+.stroke-current {
+  stroke: currentColor;
 }
 
 .bordergraty {
