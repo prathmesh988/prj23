@@ -63,8 +63,8 @@ export default function Commission() {
       <section className="w-[85vw]">
         <div className="py-4 border-b-2 px-6">
           <div>
-            <h1 className="text-2xl font-bold">Orders</h1>
-            <p className="text-xs">Check your progress</p>
+            <h1 className="text-2xl font-bold">Commission</h1>
+            <p className="text-xs">Admin Pannel</p>
           </div>
         </div>
       </section>

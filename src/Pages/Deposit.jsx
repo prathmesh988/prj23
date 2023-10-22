@@ -103,8 +103,8 @@ const Deposit = () => {
       <section className="flex-grow">
         <div className="py-4 border-b-2 px-6  ">
           <div>
-            <h1 className="text-2xl font-bold">Dashboard</h1>
-            <p className="text-xs">Check your progress</p>
+            <h1 className="text-2xl font-bold">Deposit</h1>
+            <p className="text-xs">Deposit Money Here</p>
           </div>
         </div>
 
