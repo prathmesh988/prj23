@@ -16,7 +16,7 @@ function Sidebar() {
   };
 
   return (
-    <section className="text-[#A09F9F] w-[300px] border-r-2 h-screen md:h-[100vh] py-4 px-6 text-[A09F9F]">
+    <section className="text-[#A09F9F] min-w-[336px] border-r-2 h-screen md:h-[100vh] py-4 px-6 text-[A09F9F]">
       <h1 className="text-3xl font-bold text-black">label lab</h1>
       <div className="py-4">
         <h3 className="pb-3 text-[0.8rem] px-1  ">Home</h3>

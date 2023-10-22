@@ -52,7 +52,7 @@ function DashboardSection() {
 
       <div className="flex">
         <section className="px-6 py-2 w-max-[70vw]">
-          <section className="min-w-[50vw] shadow-md  px-6 py-6 flex justify-between">
+          <section className="min-w-[50vw] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.14)] px-6 py-6 flex justify-between">
             <div className="">
               <h3 className="text-[0.8rem] font-semibold text-gray-500">
                 Balance
@@ -93,7 +93,7 @@ function DashboardSection() {
             </div>
           </section>
 
-          <section className="min-w-4/5 shadow-lg  py-4 flex flex-col  gap-6 my-8">
+          <section className="min-w-4/5 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.14)]  py-4 flex flex-col  gap-6 my-8">
             <div className="px-6">
               <p className="text-xs font-medium text-[#64748B]">
                 Overall spent
@@ -106,11 +106,45 @@ function DashboardSection() {
               <SpentLineChart />
             </div>
             <div className="self-end px-10 text-white flex gap-4">
-              <button className="px-10 py-1 bg-blue-500 rounded-sm">
+              <button class="px-10 py-1 bg-[#2563EB] rounded-sm flex items-center justify-center w-52 h-11">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_504_894)">
+                    <path
+                      d="M14.8199 4.26001C14.6213 4.6157 14.4443 4.98303 14.2899 5.36001C12.7727 5.12006 11.2272 5.12006 9.70992 5.36001C9.55551 4.98303 9.37852 4.6157 9.17992 4.26001C7.75071 4.50421 6.36132 4.94155 5.04992 5.56001C2.70486 8.9443 1.64135 13.053 2.04992 17.15C3.57815 18.2989 5.29338 19.1751 7.11992 19.74C7.53583 19.1906 7.90702 18.6087 8.22992 18C7.63399 17.7803 7.06121 17.5023 6.51992 17.17C6.66838 17.0712 6.80881 16.9609 6.93992 16.84C8.51838 17.6003 10.2479 17.9952 11.9999 17.9952C13.7519 17.9952 15.4815 17.6003 17.0599 16.84C17.1999 16.96 17.3399 17.07 17.4799 17.17C16.9357 17.4997 16.3635 17.7807 15.7699 18.01C16.0794 18.6325 16.4407 19.228 16.8499 19.79C18.6742 19.227 20.3864 18.3506 21.9099 17.2C22.3283 13.1022 21.2639 8.99019 18.9099 5.61001C17.6132 4.97875 16.2376 4.52468 14.8199 4.26001ZM8.67992 14.81C8.1795 14.7741 7.71246 14.5457 7.37684 14.1728C7.04122 13.7999 6.86311 13.3114 6.87992 12.81C6.86058 12.3079 7.0378 11.8181 7.37393 11.4446C7.71005 11.0711 8.17858 10.8435 8.67992 10.81C9.18126 10.8435 9.64978 11.0711 9.9859 11.4446C10.322 11.8181 10.4993 12.3079 10.4799 12.81C10.4993 13.3121 10.322 13.8019 9.9859 14.1754C9.64978 14.5489 9.18126 14.7765 8.67992 14.81ZM15.3199 14.81C14.8195 14.7741 14.3525 14.5457 14.0168 14.1728C13.6812 13.7999 13.5031 13.3114 13.5199 12.81C13.5006 12.3079 13.6778 11.8181 14.0139 11.4446C14.3501 11.0711 14.8186 10.8435 15.3199 10.81C15.8222 10.841 16.2922 11.0679 16.6289 11.442C16.9655 11.816 17.1418 12.3073 17.1199 12.81C17.1418 13.3128 16.9655 13.804 16.6289 14.1781C16.2922 14.5521 15.8222 14.779 15.3199 14.81Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_504_894">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
                 Discord
               </button>
-              <button className="px-10 py-1 bg-blue-500 rounded-sm">
-                Telegram{" "}
+
+              <button class="px-10 py-1 bg-[#2563EB] rounded-sm flex items-center justify-center w-52 h-11">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M20.6651 3.717L2.93509 10.554C1.72509 11.04 1.73209 11.715 2.71309 12.016L7.26509 13.436L17.7971 6.791C18.2951 6.488 18.7501 6.651 18.3761 6.983L9.8431 14.684H9.84109L9.8431 14.685L9.5291 19.377C9.9891 19.377 10.1921 19.166 10.4501 18.917L12.6611 16.767L17.2601 20.164C18.1081 20.631 18.7171 20.391 18.9281 19.379L21.9471 5.151C22.2561 3.912 21.4741 3.351 20.6651 3.717Z"
+                    fill="white"
+                  />
+                </svg>
+                Telegram
               </button>
             </div>
           </section>
@@ -118,7 +152,7 @@ function DashboardSection() {
 
         {/* TRANSACTIONS HISTORY */}
         <section className="p-4 border-l-[2px]  ">
-          <div className="w-[20vw] pl-4">
+          <div className="w-[18vw] pl-4">
             <h3 className="font-bold text-xs">Transaction History</h3>
             <div className="text-sm pt-4 flex flex-col gap-3">
               {/* PAYMENTS DIV */}

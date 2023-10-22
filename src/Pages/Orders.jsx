@@ -2,7 +2,7 @@ import React from "react";
 
 function TableHeading() {
   return (
-    <tr>
+    <tr className="text-[#94A3B8]">
       <th class="py-2 px-4 text-left">
         <input type="checkbox" />
       </th>
