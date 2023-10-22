@@ -1,5 +1,3 @@
-import 
-
 function DashboardSection() {
   return (
     <section className="flex-grow">
@@ -14,29 +12,29 @@ function DashboardSection() {
         <section className="w-4/5 shadow-lg px-6 py-4 flex justify-between">
           <div className="">
             <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="h-[60px] border-r-2 pt-5 flex align-bottom w-[200px]">
+              <h1 className="font-bold text-lg ">$280.00</h1>
             </div>
             <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
           </div>
           <div className="">
             <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="h-[60px] border-r-2 pt-5 flex align-bottom w-[200px]">
+              <h1 className="font-bold text-lg ">$280.00</h1>
             </div>
             <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
           </div>
           <div className="">
             <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="h-[60px] border-r-2 pt-5 flex align-bottom w-[200px]">
+              <h1 className="font-bold text-lg ">$280.00</h1>
             </div>
             <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
           </div>
           <div className="">
             <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-            <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
-              <h1 className="font-bold text-lg">$280.00</h1>
+            <div className="h-[60px] border-r-2 pt-5 flex align-bottom w-[200px]">
+              <h1 className="font-bold text-lg ">$280.00</h1>
             </div>
             <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
           </div>

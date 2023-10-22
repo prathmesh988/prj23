@@ -7,17 +7,17 @@ import Sidebar from "../components/Sidebar";
         <div className="py-4 border-b-2 px-6"></div> */
 }
 
-const Orderdiv = () => {
+const OrderLabel = () => {
   return (
     <section className="flex-grow">
       <div className="py-4 border-b-2 px-6  ">
         <div>
-          <h1 className="text-2xl font-bold">Dashboard</h1>
+          <h1 className="text-2xl font-bold">Order Label</h1>
           <p className="text-xs">Check your progress</p>
         </div>
       </div>
 
-      <form className="formsss h-[90vh] overflow-auto">
+      <form className="formsss h-[90vh] overflow-auto py-2 formsinput">
         <div className=" flex justify-center w-[100%]">
           <div className="flex nice2  w-[95%] justify-between">
             <div className=" grow-[2]">
@@ -56,7 +56,7 @@ const Orderdiv = () => {
                 <div className="">
                   <div className="flex flex-col gap-[0.6em]"></div>
                   <div className="huh flex flex-col gap-3 nice p-3 mt-4  ">
-                    <h1 className="font-[600] text-[16px]">TO ADDRESS</h1>
+                    <h1 className="font-[600] text-[16px]">FOM ADDRESS</h1>
                     <div className="flex flex-col gap-3 p-3 5 gtx890">
                       <div>
                         <h3 className="text-[14px] pt-1 font-[600] ">
@@ -65,7 +65,7 @@ const Orderdiv = () => {
                         <span className="pl-2 pb-1">
                           <select
                             name=""
-                            className="w-[90%] m-[0.7000000000000002em] "
+                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
                             id=""
                           >
                             <option value=""></option>
@@ -81,7 +81,7 @@ const Orderdiv = () => {
                         <span className="pl-2 pb-1">
                           <select
                             name=""
-                            className="w-[90%] m-[0.7000000000000002em] "
+                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
                             id=""
                           >
                             <option value=""></option>
@@ -185,7 +185,7 @@ const Orderdiv = () => {
                         <span className="pl-2 pb-1">
                           <select
                             name=""
-                            className="w-[90%] m-[0.7000000000000002em] "
+                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
                             id=""
                           >
                             <option value=""></option>
@@ -201,7 +201,7 @@ const Orderdiv = () => {
                         <span className="pl-2 pb-1">
                           <select
                             name=""
-                            className="w-[90%] m-[0.7000000000000002em] "
+                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
                             id=""
                           >
                             <option value=""></option>
@@ -295,7 +295,7 @@ const Orderdiv = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center  w-[95%] h-[90px] ">
+          <div className="flex justify-between items-center  w-[95%] h-[90px]  ">
             <div className="flex flex-col text-[24px]">
               <h1 className="">$148.00</h1>
               <h2>*Final Cost</h2>
@@ -323,4 +323,4 @@ const Orderdiv = () => {
   );
 };
 
-export default Orderdiv;
+export default OrderLabel;

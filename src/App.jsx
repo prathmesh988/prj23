@@ -15,7 +15,7 @@ import SignUp from "./Pages/SignUp";
 import Dashboard from "./Pages/Dashboard";
 import Heads from "./Pages/ResetPassword";
 import OrderLabel from "./Pages/OrderLabel";
-import Orders from "./pages/Orders";
+import Orders from "./Pages/Orders";
 import Deposit from "./Pages/Deposit";
 import Sidebar from "./components/Sidebar";
 import Transactions from "./Pages/Transactions";

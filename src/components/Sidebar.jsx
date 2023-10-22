@@ -7,17 +7,17 @@ import HelpIcon from "@mui/icons-material/HelpOutlineOutlined";
 import { Scale } from "@mui/icons-material";
 function Sidebar() {
   return (
-    <section className="text-gray-600 w-60 border-r-2 h-screen md:h-[100vh] py-4 px-6">
+    <section className="text-gray-600 w-60 border-r-2 h-screen md:h-[100vh] py-4 px-6 text-[A09F9F]">
       <h1 className="text-3xl font-bold text-black">label lab</h1>
       <div className="py-4">
-        <h3 className="pb-4 text-sm px-2  ">Home</h3>
-        <ul className="flex flex-col gap-2">
+        <h3 className="pb-3 text-[0.8rem] px-1  ">Home</h3>
+        <ul className="flex flex-col gap-2 text-sm ">
           <Link to={"Dashboard"}>
             <div className="flex  hover:bg-gray-100 hover:text-blue-600 px-2 rounded-md gap-2">
               {/* <DashboardIcon /> */}
               <div className="pt-1">
                 <svg
-                  width="22"
+                  width="24"
                   height="22"
                   viewBox="0 0 22 22"
                   fill="none"
@@ -47,7 +47,7 @@ function Sidebar() {
                 </svg>
               </div>
 
-              <li>Dashboard</li>
+              <li className="pt-1 pl-2">Dashboard</li>
             </div>
           </Link>
           <Link to={"order-label"}>
@@ -55,7 +55,7 @@ function Sidebar() {
               {/* <OrderLabelIcon /> */}
               <div className="pt-1">
                 <svg
-                  width="18"
+                  width="24"
                   height="20"
                   viewBox="0 0 18 20"
                   fill="none"
@@ -67,7 +67,7 @@ function Sidebar() {
                   />
                 </svg>
               </div>
-              <li>Order label</li>
+              <li className="pt-1 pl-2">Order label</li>
             </div>
           </Link>
           <Link to={"Transactions"}>
@@ -96,7 +96,7 @@ function Sidebar() {
                   />
                 </svg>
               </div>
-              <li>Transactions</li>
+              <li className="pt-1 pl-2">Transactions</li>
             </div>
           </Link>
           <Link to={"UserPage"}>
@@ -139,14 +139,14 @@ function Sidebar() {
                   />
                 </svg>
               </div>
-              <li>UserPage</li>
+              <li className="pt-1 pl-2">UserPage</li>
             </div>
           </Link>
           <Link to={"Commission"}>
             <div className="flex  hover:bg-gray-100 hover:text-blue-600 px-2 rounded-md gap-2">
               <div className="pt-1">
                 <svg
-                  width="26"
+                  width="24"
                   height="26"
                   viewBox="0 0 26 26"
                   fill="none"
@@ -162,7 +162,7 @@ function Sidebar() {
                   />
                 </svg>
               </div>
-              <li>Commission</li>
+              <li className="pt-1 pl-2">Commission</li>
             </div>
           </Link>
           <Link to={"orders"}>
@@ -170,7 +170,7 @@ function Sidebar() {
               {/* <OrderIcon /> */}
               <div className="pt-1">
                 <svg
-                  width="22"
+                  width="24"
                   height="22"
                   viewBox="0 0 22 22"
                   fill="none"
@@ -210,7 +210,7 @@ function Sidebar() {
               {/* <Deposit /> */}
               <div className="pt-1">
                 <svg
-                  width="22"
+                  width="24"
                   height="19"
                   viewBox="0 0 22 19"
                   fill="none"
@@ -237,7 +237,7 @@ function Sidebar() {
               {/* <HelpIcon /> */}
               <div className="pt-1">
                 <svg
-                  width="22"
+                  width="24"
                   height="22"
                   viewBox="0 0 22 22"
                   fill="none"

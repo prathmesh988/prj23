@@ -53,39 +53,46 @@ function DashboardSection() {
 
       <div className="flex">
         <section className="px-6 py-2 w-max-[70vw]">
-          <section className="min-w-[50vw] shadow-lg px-6 py-4 flex justify-between gap-20">
+          <section className="min-w-[50vw] shadow-xl  px-6 py-4 flex justify-between">
             <div className="">
               <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+              <div className="h-[60px] border-r-2 pt-4 flex align-bottom w-[200px]">
                 <h1 className="font-bold text-lg">$280.00</h1>
               </div>
               <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
             <div className="">
               <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+              <div className="h-[60px] border-r-2 pt-4 flex align-bottom w-[200px]">
                 <h1 className="font-bold text-lg">$280.00</h1>
               </div>
               <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
             <div className="">
               <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+              <div className="h-[60px] border-r-2 pt-4 flex align-bottom w-[200px]">
                 <h1 className="font-bold text-lg">$280.00</h1>
               </div>
               <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
             <div className="">
               <h3 className="text-sm font-semibold text-gray-500">Balance</h3>
-              <div className="h-[60px] border-r-2 flex align-bottom w-[200px]">
+              <div className="h-[60px] border-r-2 pt-4 flex align-bottom w-[200px]">
                 <h1 className="font-bold text-lg">$280.00</h1>
               </div>
               <p className="text-xs text-gray-500 font-bold">Last Week $0</p>
             </div>
           </section>
 
-          <section className="min-w-4/5 shadow-lg  py-4 flex flex-col  gap-6 my-20">
-            <SpentLineChart />
+          <section className="min-w-4/5 shadow-lg  py-4 flex flex-col  gap-6 my-8">
+            <div className="px-6">
+              <p className="text-xs font-medium text-[#64748B]">
+                Overall spent
+              </p>
+            </div>
+            <div className="pl-7">
+              <SpentLineChart />
+            </div>
             <div className="self-end px-10 text-white flex gap-4">
               <button className="px-10 py-1 bg-blue-500 rounded-sm">
                 Discord
@@ -139,7 +146,6 @@ function DashboardSection() {
 const Dashboard = () => {
   return (
     <div className=" ">
-      {/* <Sidebar /> */}
       <DashboardSection />
     </div>
   );

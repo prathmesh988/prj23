@@ -1,5 +1,4 @@
 import React from "react";
-// import Sidebar from "../components/Sidebar";
 
 function TableHeading() {
   return (
@@ -74,7 +73,6 @@ const Orders = () => {
   return (
     <>
       <div className="flex w-[100vw] overflow-x-hidden">
-        {/* <Sidebar /> */}
         <OrderLayout />
       </div>
     </>
