@@ -72,7 +72,7 @@ const OrderLayout = ({ rows, deleteRow, editRow }) => {
 const Orders = () => {
   return (
     <>
-      <div className="flex w-[100vw] overflow-x-hidden">
+      <div className="flex w-[84vw] overflow-x-hidden">
         <OrderLayout />
       </div>
     </>

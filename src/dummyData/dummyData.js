@@ -81,7 +81,6 @@ const dummyData = {
       },
     },
   },
-  //... Similar structures for other endpoints
 };
 
 export default dummyData;

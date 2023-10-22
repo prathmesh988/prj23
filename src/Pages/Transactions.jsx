@@ -1,15 +1,15 @@
 function TableHeading() {
   return (
-    <tr>
-      <th class="py-2 px-4 text-left">
+    <tr className="text-[#94A3B8]">
+      <th class="py-4 px-4 text-left">
         <input type="checkbox" />
       </th>
-      <th class="py-2 px-4 text-left">User Name</th>
-      <th class="py-2 px-4 text-left">Payment Method</th>
-      <th class="py-2 px-4 text-left">ID</th>
-      <th class="py-2 px-4 text-left">Date</th>
-      <th class="py-2 px-4 text-left">Status</th>
-      <th class="py-2 px-4 text-left">Total price</th>
+      <th class="py-4 px-4 text-left">User Name</th>
+      <th class="py-4 px-4 text-left">Payment Method</th>
+      <th class="py-4 px-4 text-left">ID</th>
+      <th class="py-4 px-4 text-left">Date</th>
+      <th class="py-4 px-4 text-left">Status</th>
+      <th class="py-4 px-4 text-left">Total price</th>
     </tr>
   );
 }
@@ -51,7 +51,7 @@ export default function Transactions() {
           <div className="w-full border-2 border-blue-500 rounded-md "></div>
         </div>
         <table class="min-w-full bg-white text-xs">
-          <thead class="bg-blue-50 text-gray-400 font-light">
+          <thead class="bg-[#F8FAFC] text-[#94A3B8] ">
             <TableHeading />
           </thead>
           <tbody class="text-gray-700">
