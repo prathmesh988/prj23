@@ -1,14 +1,34 @@
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 function Sidebar() {
+  // State to track the active link
+  const [activeLink, setActiveLink] = useState("");
+
+  // A function to set the active link
+  const handleLinkClick = (linkName) => {
+    setActiveLink(linkName);
+  };
+
+  // A helper function to determine if a link should be active
+  const isActive = (linkName) => {
+    return activeLink === linkName;
+  };
+
   return (
     <section className="text-[#A09F9F] w-[300px] border-r-2 h-screen md:h-[100vh] py-4 px-6 text-[A09F9F]">
       <h1 className="text-3xl font-bold text-black">label lab</h1>
       <div className="py-4">
         <h3 className="pb-3 text-[0.8rem] px-1  ">Home</h3>
         <ul className="flex flex-col  text-sm ">
-          <Link to={"Dashboard"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link to={"Dashboard"} onClick={() => handleLinkClick("Dashboard")}>
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("Dashboard")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   class="hover:text-[#2563EB]"
@@ -45,8 +65,17 @@ function Sidebar() {
               <li className="pt-1 pl-2">Dashboard</li>
             </div>
           </Link>
-          <Link to={"order-label"}>
-            <div className="flex  py-2 hover:bg-[#F5F7FB] active:text-blue-600  hover:text-[#2563EB] px-2 rounded-md gap-2">
+          <Link
+            to={"order-label"}
+            onClick={() => handleLinkClick("order-label")}
+          >
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("order-label")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   width="24"
@@ -66,8 +95,17 @@ function Sidebar() {
               <li className="pt-1 pl-2">Order label</li>
             </div>
           </Link>
-          <Link to={"Transactions"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link
+            to={"Transactions"}
+            onClick={() => handleLinkClick("Transactions")}
+          >
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("Transactions")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   width="24"
@@ -96,8 +134,14 @@ function Sidebar() {
               <li className="pt-1 pl-2">Transactions</li>
             </div>
           </Link>
-          <Link to={"UserPage"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link to={"UserPage"} onClick={() => handleLinkClick("UserPage")}>
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("UserPage")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   className=".stroke-current hover:tex"
@@ -141,8 +185,14 @@ function Sidebar() {
               <li className="pt-1 pl-2">UserPage</li>
             </div>
           </Link>
-          <Link to={"Commission"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link to={"Commission"} onClick={() => handleLinkClick("Commission")}>
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("Commission")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   width="24"
@@ -167,8 +217,14 @@ function Sidebar() {
               <li className="pt-1 pl-2">Commission</li>
             </div>
           </Link>
-          <Link to={"orders"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link to={"orders"} onClick={() => handleLinkClick("orders")}>
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("orders")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   className=".stroke-current hover:tex"
@@ -208,8 +264,14 @@ function Sidebar() {
       <div className="py-4">
         <h3 className="pb-4 text-sm px-2  ">Misc</h3>
         <ul className="flex flex-col ">
-          <Link to={"Deposit"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link to={"Deposit"} onClick={() => handleLinkClick("Deposit")}>
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("Deposit")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               <div className="pt-1">
                 <svg
                   width="24"
@@ -235,8 +297,14 @@ function Sidebar() {
               </li>
             </div>
           </Link>
-          <Link to={"/Help"}>
-            <div className="flex  hover:bg-[#F5F7FB] hover:text-[#2563EB] px-2 py-2 rounded-md gap-2">
+          <Link to={"/Help"} onClick={() => handleLinkClick("Help")}>
+            <div
+              className={`flex px-2 py-2 rounded-md gap-2 ${
+                isActive("Help")
+                  ? "bg-[#F5F7FB] text-[#2563EB]"
+                  : "hover:bg-[#F5F7FB] hover:text-[#2563EB]"
+              }`}
+            >
               {/* <HelpIcon /> */}
               <div className="pt-1">
                 <svg
