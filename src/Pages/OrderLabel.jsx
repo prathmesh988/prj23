@@ -1,15 +1,9 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-{
-  /* <section className="flex flex-col w-3/4 font-semibold">
-      <section className="w-[85vw]">
-        <div className="py-4 border-b-2 px-6"></div> */
-}
-
 const OrderLabel = () => {
   return (
-    <section className="flex-grow">
+    <section className="flex-grow ">
       <div className="py-4 border-b-2 px-6  ">
         <div>
           <h1 className="text-2xl font-bold">Order Label</h1>
@@ -17,38 +11,7 @@ const OrderLabel = () => {
         </div>
       </div>
 
-      <form className="formsss h-[90vh] overflow-auto py-2 formsinput">
-        <div className=" flex justify-center w-[100%]">
-          <div className="flex nice2  w-[95%] justify-between">
-            <div className=" grow-[2]">
-              <h3 className="font-[600] text-[16px] pb-1">Type</h3>
-              <span className="h-[40px] p-1 ml-3  w-[100%] ">
-                <input
-                  type="text"
-                  className="pl-2 w-[97%] "
-                  placeholder="USPS Priority"
-                  name=""
-                  id=""
-                />
-              </span>
-            </div>
-
-            <div className="grow-[2]">
-              <h3 className="font-[600] text-[16px]  pb-1 pl-[5em]">
-                PACKAGE WEIGHT (70 LBS MAX)
-              </h3>
-              <span className="h-[40px]">
-                <input
-                  type="number"
-                  className="ml-[4em] w-[80%]"
-                  placeholder="0 LBS"
-                  name=""
-                  id=""
-                />
-              </span>
-            </div>
-          </div>
-        </div>
+      <form className="formsss h-[90vh] overflow-auto py-2 formsinput bg-[#F8FAFC] m-6 rounded-lg">
         <div className="  flex flex-col items-center justify-center w-[100%] coldy">
           <div className="flex flex-col items-center justify-between  w-[95%] overflow-y-auto">
             <div className="flex gap-[2rem] w-[100%] overflow-x-hidden ">
@@ -56,117 +19,136 @@ const OrderLabel = () => {
                 <div className="">
                   <div className="flex flex-col gap-[0.6em]"></div>
                   <div className="huh flex flex-col gap-3 nice p-3 mt-4  ">
-                    <h1 className="font-[600] text-[16px]">FOM ADDRESS</h1>
-                    <div className="flex flex-col gap-3 p-3 5 gtx890">
+                    <div className="mb-10">
+                      <h3 className="font-[600] text-[16px] pb-1">Type</h3>
+
+                      <select
+                        name=""
+                        className="w-[96%] text-gray-400 text-xs border-[1px] h-[40px]"
+                        id=""
+                      >
+                        <option value="" disabled selected className="">
+                          USPS Priority
+                        </option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <h1 className="font-[600] text-[16px]">FROM ADDRESS</h1>
+                    <div className="flex flex-col gap-3 py-3 5 gtx890">
                       <div>
-                        <h3 className="text-[14px] pt-1 font-[600] ">
+                        <h3 className="text-[14px] pb-1 pt-1 text-[#64748B] font-[600] ">
                           Saved Address
                         </h3>
-                        <span className="pl-2 pb-1">
-                          <select
-                            name=""
-                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
-                            id=""
-                          >
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                          </select>
-                        </span>
+
+                        <select
+                          name=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px] h-[40px]"
+                          id=""
+                        >
+                          <option value="" disabled selected className="">
+                            Select your option
+                          </option>
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
                       </div>
                       <div>
-                        <h3 className="text-[14px] pt-1 font-[600] ">
+                        <h3 className="text-[14px] pb-1 text-[#64748B] pt-1 font-[600] ">
                           Country *
                         </h3>
-                        <span className="pl-2 pb-1">
-                          <select
-                            name=""
-                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
-                            id=""
-                          >
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                          </select>
-                        </span>
+
+                        <select
+                          name=""
+                          className="w-[96%] border-[1px] h-[40px]"
+                          id=""
+                        >
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
                       </div>
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Name*</h3>
-                        <span className="pl-2 pb-1">
-                          <input type="text" placeholder="Name" name="" id="" />
-                        </span>
-                      </div>
-                      <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">
-                          Company/Reference Number (optional)
+                        <h3 className="font-[600] text-[#64748B] mb-1 ">
+                          Name<span className="text-[#FF0000]">*</span>
                         </h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="Company"
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px] pl-1  py-3"
+                        />
                       </div>
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Street*</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder=" Street "
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Company / Reference Number (
+                          <span className="font-semibold text-black italic">
+                            optional
+                          </span>
+                          )
+                        </h3>
+                        <input
+                          type="Company"
+                          placeholder="Name"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Street 2 (optional)</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="Street 2"
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Street<span className="text-[#FF0000]">*</span>
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="Street"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
-
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">City*</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input type="text" placeholder="City" name="" id="" />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Street 2 (
+                          <span className="font-semibold text-black italic">
+                            optional
+                          </span>
+                          )
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
-
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">State *</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="State"
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          City<span className="text-[#FF0000]">*</span>
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="City"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
-
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Zip Code *</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="Zip Code  "
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Zip Code<span className="text-[#FF0000]">*</span>
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="Zip Code"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
                     </div>
                   </div>
@@ -175,118 +157,140 @@ const OrderLabel = () => {
               <div className="grow-[2.6] ">
                 <div className="">
                   <div className="flex flex-col gap-[1em]"></div>
-                  <div className="huh flex flex-col gap-3 nice  p-2 pr-[1rem] mt-4 h-[100%] pb-[1.1em]">
-                    <h1 className="font-[600] text-[16px]">TO ADDRESS</h1>
-                    <div className="flex flex-col gap-3 p-3 5 gtx890">
+                  <div className="huh flex flex-col gap-3 nice p-3 mt-4  ">
+                    <div className="mb-10">
+                      <h3 className="font-[600] text-[16px] pb-1">
+                        PACKAGE WEIGHT (70 LBS MAX)
+                      </h3>
+
+                      <select
+                        name=""
+                        className="w-[96%] text-gray-400 text-xs border-[1px] h-[40px]"
+                        id=""
+                      >
+                        <option value="" disabled selected className="">
+                          0 LBS
+                        </option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <h1 className="font-[600] text-[16px]">To ADDRESS</h1>
+
+                    <div className="flex flex-col gap-3 py-3 5 gtx890">
                       <div>
-                        <h3 className="text-[14px] pt-1 font-[600] ">
+                        <h3 className="text-[14px] pb-1 pt-1 text-[#64748B] font-[600] ">
                           Saved Address
                         </h3>
-                        <span className="pl-2 pb-1">
-                          <select
-                            name=""
-                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
-                            id=""
-                          >
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                          </select>
-                        </span>
+
+                        <select
+                          name=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px] h-[40px]"
+                          id=""
+                        >
+                          <option value="" disabled selected className="">
+                            Select your option
+                          </option>
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
                       </div>
                       <div>
-                        <h3 className="text-[14px] pt-1 font-[600] ">
+                        <h3 className="text-[14px] pb-1 text-[#64748B] pt-1 font-[600] ">
                           Country *
                         </h3>
-                        <span className="pl-2 pb-1">
-                          <select
-                            name=""
-                            className="w-[96%] m-[0.7000000000000002em] h-[40px]"
-                            id=""
-                          >
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                          </select>
-                        </span>
+
+                        <select
+                          name=""
+                          className="w-[96%] border-[1px] h-[40px]"
+                          id=""
+                        >
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
                       </div>
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Name*</h3>
-                        <span className="pl-2 pb-1">
-                          <input type="text" placeholder="Name" name="" id="" />
-                        </span>
-                      </div>
-                      <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">
-                          Company/Reference Number (optional)
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Name<span className="text-[#FF0000]">*</span>
                         </h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="Company"
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Street*</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder=" Street "
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Company / Reference Number (
+                          <span className="font-semibold text-black italic">
+                            optional
+                          </span>
+                          )
+                        </h3>
+                        <input
+                          type="Company"
+                          placeholder="Name"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Street 2 (optional)</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="Street 2"
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Street<span className="text-[#FF0000]">*</span>
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="Street"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
-
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">City*</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input type="text" placeholder="City" name="" id="" />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Street 2 (
+                          <span className="font-semibold text-black italic">
+                            optional
+                          </span>
+                          )
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
-
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">State *</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="State"
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          City<span className="text-[#FF0000]">*</span>
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="City"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
-
                       <div className="text-[14px]">
-                        <h3 className="pl-1 font-[600]">Zip Code *</h3>
-                        {/* <input type="text" placeholder="Name" name="" id="" /> */}
-                        <span className="pl-2 pb-1 pt-2">
-                          <input
-                            type="text"
-                            placeholder="Zip Code  "
-                            name=""
-                            id=""
-                          />
-                        </span>
+                        <h3 className="font-[600] text-[#64748B] mb-1">
+                          Zip Code<span className="text-[#FF0000]">*</span>
+                        </h3>
+                        <input
+                          type="text"
+                          placeholder="Zip Code"
+                          name=""
+                          id=""
+                          className="w-[96%] text-gray-400 text-xs border-[1px]  pl-1 py-3"
+                        />
                       </div>
                     </div>
                   </div>
@@ -295,10 +299,10 @@ const OrderLabel = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center  w-[95%] h-[90px]  ">
+          <div className="flex justify-between items-center  w-[95%] h-[90px]  mb-10">
             <div className="flex flex-col text-[24px]">
-              <h1 className="">$148.00</h1>
-              <h2>*Final Cost</h2>
+              <h1 className="font-semibold text-[#00CA4E]">$148.00</h1>
+              <h2 className="text-[#FF0000] text-xs">*Required Fields</h2>
             </div>
 
             <button className=" flex gap items-center buttioninorderlab w-[200px] h-[45px]  text-gray-50	 justify-center mt-3	 ">

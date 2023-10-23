@@ -97,49 +97,6 @@ bordergraty2 {
   border-radius: 4px;
   border: 1px solid #e2e8f0 !important;
 }
-input::placeholder {
-  font-size: 16px;
-  /* color: #999; */
-}
-.nice,
-.nice2 {
-  border: 1px solid transparent;
-  background-color: #f8fafc;
-}
-.nice {
-  border-radius: 15px;
-}
-.nice2 {
-  padding: 1em;
-  border-radius: 15px;
-}
-
-.nice2 input {
-  padding: 5px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-.nice input {
-  margin: 0.7em;
-  padding: 1em;
-}
-
-.coldy input {
-  border-radius: 4px;
-}
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 
 .huh input {
   width: 100%;

@@ -252,9 +252,7 @@ function Sidebar() {
                 </svg>
               </div>
 
-              <li className="hover:bg-[#F5F7FB] hover:text-[#2563EB] p py-2x-2 rounded-md">
-                Orders
-              </li>
+              <li className="pt-1 pl-2">Orders</li>
             </div>
           </Link>
         </ul>

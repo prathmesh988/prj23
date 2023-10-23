@@ -10,18 +10,38 @@ import {
 } from "recharts";
 
 const data = [
-  { month: "April", spent: 100 },
+  { month: "Apr", spent: 100 },
   { month: "May", spent: 300 },
-  { month: "June", spent: 200 },
-  { month: "July", spent: 278 },
-  { month: "August", spent: 189 },
-  { month: "September", spent: 239 },
-  { month: "October", spent: 349 },
-  { month: "July", spent: 278 },
-  { month: "August", spent: 189 },
-  { month: "September", spent: 239 },
-  { month: "October", spent: 349 },
+  { month: "Jun", spent: 1200 },
+  { month: "Jul", spent: 278 },
+  { month: "Aug", spent: 1809 },
+  { month: "Sept", spent: 239 },
+  { month: "Oct", spent: 349 },
 ];
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div
+        className="custom-tooltip"
+        style={{
+          backgroundColor: "#0F172AB2",
+          padding: "10px",
+          borderRadius: "10px",
+        }}
+      >
+        <p
+          className="intro font-semibold text-sm mb-1 mr-6"
+          style={{ color: "white" }}
+        >{`$${payload[0].value}`}</p>
+        <p
+          className="label font-light"
+          style={{ color: "white" }}
+        >{`${label} ,17`}</p>
+      </div>
+    );
+  }
+  return null;
+};
 
 const SpentLineChart = () => (
   <div>
@@ -34,8 +54,15 @@ const SpentLineChart = () => (
       <CartesianGrid vertical={false} strokeOpacity={0.4} />
       <XAxis tickLine={false} dataKey="month" axisLine={false} />
       <YAxis axisLine={false} tickLine={false} />
-      <Tooltip />
-      <Area type="monotone" dataKey="spent" stroke="#1655a8" fill="#f2f8ff" />
+      <Tooltip content={<CustomTooltip />} />
+
+      <Area
+        type="monotone"
+        dataKey="spent"
+        stroke="#2563EB"
+        strokeWidth={2}
+        fill="#f2f8ff"
+      />
     </AreaChart>
   </div>
 );

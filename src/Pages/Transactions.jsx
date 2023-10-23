@@ -1,10 +1,14 @@
 import { useState } from "react";
 
-function TableHeading({ toggleSelectAll }) {
+function TableHeading({ allChecked, toggleAllChecked }) {
   return (
     <tr className="text-[#94A3B8] text-[16px] ">
       <th className="py-5 px-4 text-left">
-        <input type="checkbox" onChange={toggleSelectAll} />
+        <input
+          type="checkbox"
+          checked={allChecked}
+          onChange={toggleAllChecked}
+        />
       </th>
       <th className="py-5 px-4 text-left font-medium">User Name</th>
       <th className="py-5 px-4 text-left font-medium">Payment Method</th>
@@ -17,15 +21,11 @@ function TableHeading({ toggleSelectAll }) {
   );
 }
 
-function TableContent({ isChecked, toggleIndividualCheck, index }) {
+function TableContent({ isChecked, toggleChecked }) {
   return (
     <tr className="font-semibold text-sm">
       <td className="p-4">
-        <input
-          type="checkbox"
-          checked={isChecked}
-          onChange={() => toggleIndividualCheck(index)}
-        />
+        <input type="checkbox" checked={isChecked} onChange={toggleChecked} />
       </td>
       <td className="p-4 w-[130px]">Bob</td>
       <td className="p-4 w-[230px]">CashApp</td>
@@ -72,25 +72,23 @@ function TableContent({ isChecked, toggleIndividualCheck, index }) {
   );
 }
 
-export default function Transactions() {
-  const [selectAll, setSelectAll] = useState(false);
-  const [checkboxes, setCheckboxes] = useState(
-    Array(6).fill(false) // Initializes an array of 6 false values
+export default function Orders() {
+  const rows = Array(6).fill(null); // Your table rows data
+  const [allChecked, setAllChecked] = useState(false);
+  const [individualChecked, setIndividualChecked] = useState(
+    Array(rows.length).fill(false)
   );
 
-  const toggleSelectAll = () => {
-    const newValue = !selectAll;
-    setSelectAll(newValue);
-    setCheckboxes(checkboxes.map(() => newValue));
+  const toggleAllChecked = () => {
+    setAllChecked(!allChecked);
+    setIndividualChecked(Array(rows.length).fill(!allChecked));
   };
 
-  const toggleIndividualCheck = (index) => {
-    const newCheckboxes = [...checkboxes];
-    newCheckboxes[index] = !newCheckboxes[index];
-    setCheckboxes(newCheckboxes);
-
-    // If all checkboxes are selected, set selectAll to true, otherwise false
-    setSelectAll(newCheckboxes.every((check) => check));
+  const toggleChecked = (index) => {
+    const updatedChecked = [...individualChecked];
+    updatedChecked[index] = !individualChecked[index];
+    setIndividualChecked(updatedChecked);
+    setAllChecked(updatedChecked.every((value) => value));
   };
 
   return (
@@ -108,17 +106,19 @@ export default function Transactions() {
           <h2 className="py-6 px-3 text-[#2563EB]">All Orders</h2>
           <div className="w-full border-2 border-blue-500 rounded-md "></div>
         </div>
-        <table class="max-w-full bg-white text-xs">
-          <thead class="bg-[#F8FAFC] text-[#94A3B8] ">
-            <TableHeading toggleSelectAll={toggleSelectAll} />
+        <table className="max-w-full bg-white text-xs">
+          <thead className="bg-[#F8FAFC] text-[#94A3B8] ">
+            <TableHeading
+              allChecked={allChecked}
+              toggleAllChecked={toggleAllChecked}
+            />
           </thead>
-          <tbody class="text-gray-700">
-            {checkboxes.map((isChecked, index) => (
+          <tbody className="text-gray-700">
+            {rows.map((_, index) => (
               <TableContent
                 key={index}
-                isChecked={isChecked}
-                toggleIndividualCheck={toggleIndividualCheck}
-                index={index}
+                isChecked={individualChecked[index]}
+                toggleChecked={() => toggleChecked(index)}
               />
             ))}
           </tbody>
