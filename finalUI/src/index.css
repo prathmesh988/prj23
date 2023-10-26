@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  font-size: 18px;
+  overflow: hidden;
+  /* width: 100vw; */
+  min-height: 100%;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.landingpage {
+  font-family: "Poppins", sans-serif;
+}
+
+.butt {
+  border: 1px solid transparent;
+  width: 100%;
+  margin-top: 1.6vh;
+  padding: 0.6em;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 12px;
+  /* height: 2%; */
+}
+.butt2 {
+  border: 1px solid transparent;
+  width: 70%;
+  margin-top: 1.6vh;
+  padding: 0.6em;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 12px;
+}
+.butt3 {
+  border: 1px solid transparent;
+  width: 72%;
+  margin-top: 1.6vh;
+  padding: 0.6em;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 12px;
+  /* height: 2%; */
+}
+.inpboxesofform {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 0.54px solid #e2e8f0;
+  border-radius: 10px;
+}
+.inpboxofresetpwd {
+  width: 70%;
+  border: 2px solid #678ec2;
+  border-radius: 10px;
+}
+.commonborder {
+  border: 0.54px solid #e2e8f0;
+  /* padding; */
+  border-radius: 12px;
+}
+input:focus , textarea:focus, select:focus{
+  outline: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.stroke-current {
+  stroke: currentColor;
+}
+
+.bordergraty {
+  border-radius: 4px;
+  border: 1px solid #e2e8f0 !important;
+}
+bordergraty2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0 !important;
+}
+input::placeholder{
+  font-size: 16px;
+  /* color: #999; */
+}
+.nice,
+.nice2 {
+  border: 1px solid transparent;
+  background-color: #f8fafc;
+}
+.nice {
+  border-radius: 15px;
+}i
+.nice2 {
+  padding: 1em;
+  border-radius: 15px;
+}
+
+.nice2 input {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.nice input {
+  margin: 0.7em;
+  padding: 1em;
+}
+
+.coldy input {
+  border-radius: 4px;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+.huh input {
+  width: 100%;
+}
+
+.buttioninorderlab {
+  border-radius: 4px;
+  background: #2563eb;
+}
+
+.formsss select,
+.formsss input[type="text"] {
+    border-radius: 4px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    padding: 10px;
+}
+
+.hide-scrollbar {
+  overflow-y: scroll; /* Enables vertical scrolling even when the scrollbar is hidden */
+  scrollbar-width: none; /* For modern Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0; /* For Chrome, Safari, and Opera */
+}
